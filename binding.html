@@ -1561,7 +1561,6 @@
                     <div class="binding__error">$!card_error</div>
                     #end
                     <button
-                      tabindex="5"
                       class="submit_btn"
                       type="submit"
                       onclick="return isFormValid()">
@@ -1743,11 +1742,6 @@
 
         if (value.length > 3) {
           target.value = value.slice(0, 3);
-        }
-
-        // меняет фокус если в нипуте больше 3 символов
-        if (target.value.length >= 3) {
-          document.querySelector('button[tabindex="5"]')?.focus();
         }
       });
 
