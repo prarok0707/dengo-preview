@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#F57E3B">
+		<meta name="theme-color" content="#F57E3B">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1247.css" media="print, (max-width: 1247px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="account">
+							<button class="btn">Войти</button>
+						</div>
+
+						<div class="menu modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#menu_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="menu_modal">
+								<div class="links">
+									<div><a href="/">Личный кабинет</a></div>
+									<div><a href="/">Центр поддержки</a></div>
+									<div><a href="/">Юридические документы</a></div>
+									<div><a href="/">Вопросы и ответы</a></div>
+									<div><a href="/">Пожаловаться</a></div>
+								</div>
+
+								<div class="socials">
+									<div class="label">DenGo в соцсетях</div>
+
+									<div class="items">
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_soc_odnokl.png" alt="">
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_soc_vk.png" alt="">
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_soc_dzen.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="register">
+					<div class="cont">
+						<div class="data">
+							<div class="steps">
+								<div class="bullets">
+									<div class="active"></div>
+									<div></div>
+									<div></div>
+								</div>
+
+								<div class="names">
+									<div class="show">Параметры займа</div>
+									<div>Паспортные данные</div>
+									<div>Дополнительные сведения</div>
+								</div>
+							</div>
+
+							<form action="" class="form">
+								<div class="step step1 calc" style="display: block;">
+									<div class="step1_1">
+										<div class="section calculation">
+											<button type="button" class="spoler_btn active">
+												<span>Показать</span>
+												<span>Свернуть</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+											</button>
+
+											<div class="info" style="display: none;">
+												<div class="date">Срок займа: <b><span>11</span> дней</b></div>
+												<div class="price">Сумма займа: <b><span>30 000</span> ₽</b></div>
+											</div>
+
+											<div class="hide" style="display: block;">
+												<div class="price_range">
+													<div class="label">Сумма займа:</div>
+
+													<div class="field">
+														<select name="price" class="price_select skip">
+															<option value="1000">1 000 ₽</option>
+															<option value="2000">2 000 ₽</option>
+															<option value="3000">3 000 ₽</option>
+															<option value="4000">4 000 ₽</option>
+															<option value="5000">5 000 ₽</option>
+															<option value="6000">6 000 ₽</option>
+															<option value="7000">7 000 ₽</option>
+															<option value="8000">8 000 ₽</option>
+															<option value="9000">9 000 ₽</option>
+															<option value="10000">10 000 ₽</option>
+															<option value="11000">11 000 ₽</option>
+															<option value="12000">12 000 ₽</option>
+															<option value="13000">13 000 ₽</option>
+															<option value="14000">14 000 ₽</option>
+															<option value="15000" selected>15 000 ₽</option>
+														</select>
+
+														<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+													</div>
+
+													<input type="hidden" id="price_range" name="price_range" value="">
+												</div>
+
+												<div class="date_range">
+													<div class="label">Срок займа:</div>
+
+													<div class="field">
+														<select name="date" class="date_select skip">
+															<option value="1">1 день</option>
+															<option value="2">2 дня</option>
+															<option value="3">3 дня</option>
+															<option value="4">4 дня</option>
+															<option value="5">5 дней</option>
+															<option value="6">6 дней</option>
+															<option value="7">7 дней</option>
+															<option value="8">8 дней</option>
+															<option value="9">9 дней</option>
+															<option value="10">10 дней</option>
+															<option value="11">11 дней</option>
+															<option value="12">12 дней</option>
+															<option value="13">13 дней</option>
+															<option value="14">14 дней</option>
+															<option value="15" selected>15 дней</option>
+															<option value="16">16 дней</option>
+															<option value="17">17 дней</option>
+															<option value="18">18 дней</option>
+															<option value="19">19 дней</option>
+															<option value="20">20 дней</option>
+															<option value="21">21 день</option>
+															<option value="22">22 дня</option>
+															<option value="23">23 дня</option>
+															<option value="24">24 дня</option>
+															<option value="25">25 дней</option>
+															<option value="26">26 дней</option>
+															<option value="27">27 дней</option>
+															<option value="28">28 дней</option>
+															<option value="29">29 дней</option>
+															<option value="30">30 дней</option>
+														</select>
+
+														<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+													</div>
+
+													<input type="hidden" id="date_range" name="date_range" value="">
+												</div>
+
+												<div class="totals line">
+													<div class="price">
+														<div class="label">Возвращаете:</div>
+
+														<div class="val">
+															<div class="old"><span>24 809</span></div>
+															<div class="new"><span>0</span> ₽</div>
+														</div>
+													</div>
+
+													<div class="date">
+														<div class="label">Дата возврата</div>
+
+														<div class="val">31.06.2024</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="section">
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="" class="input">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_active_field"></use></svg>
+													<div class="label">Имя</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="" class="input error">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_active_field"></use></svg>
+													<div class="label">Фамилия</div>
+												</div>
+
+												<div class="field_text error">Не верно заполнены данные</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="text" name="" value="" class="input" id="middle_name">
+
+													<div class="label">Отчество</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<label class="checkbox no_middle_name">
+														<input type="checkbox" name="no_middle_name">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Нет отчества</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="section">
+											<div class="line">
+												<div class="field">
+													<input type="text" name="date" value="" class="input">
+
+													<div class="label">Дата рождения</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="tel" name="" value="" class="input">
+
+													<div class="label">Номер телефона</div>
+												</div>
+											</div>
+
+											<div class="line">
+												<div class="field">
+													<input type="email" name="" value="" class="input">
+
+													<div class="label">Почта*</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="section">
+											<div class="line agree">
+												<label class="checkbox agree_all">
+													<input type="checkbox" name="agree_all">
+
+													<div class="check">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+													</div>
+
+													<div>Я соглашаюсь с нижеуказанными пунктами</div>
+
+													<button class="spoler_btn" type="button">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+													</button>
+												</label>
+
+												<div class="sub">
+													<div><label class="checkbox">
+														<input type="checkbox" name="agree">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Нажимая, я принимаю условия Соглашения обиспользовании аналога собственноручной подписи.</div>
+													</label></div>
+
+													<div><label class="checkbox">
+														<input type="checkbox" name="agree">
+
+														<div class="check">
+															<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Я даю согласие на обработку и хранение моих персональных данных, в том числе на автоматизированную обработку персональных данных.</div>
+													</label></div>
+												</div>
+											</div>
+
+											<div class="submit">
+												<button type="button" class="submit_btn next_auth_btn">Продолжить</button>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="step1_2 auth">
+										<div class="title">На Ваш номер: +7 9ХХ ХХХ ХХ ХХ</div>
+
+										<button class="edit_phone_btn modal_btn" data-modal="edit_phone_modal">Редактировать номер телефона</button>
+
+										<div class="desc">было отправлено SMS с кодом подтверждения.<br> Пожалуйста, введите код из SMS</div>
+
+										<div class="form">
+											<div class="line sms_code">
+												<div class="field">
+													<input type="text" name="" value="" class="input" maxlength="1" placeholder="*">
+												</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" maxlength="1" placeholder="*">
+												</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" maxlength="1" placeholder="*">
+												</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" maxlength="1" placeholder="*">
+												</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" maxlength="1" placeholder="*">
+												</div>
+
+												<div class="field">
+													<input type="text" name="" value="" class="input" maxlength="1" placeholder="*">
+												</div>
+											</div>
+
+											<div class="submit">
+												<button type="submit" class="submit_btn next_btn">Подтвердить</button>
+											</div>
+
+											<button class="request_again_btn">Отправить SMS повторно</button>
+
+											<div class="request_again">
+												Запросить код повторно можно через
+
+												<span class="timer">
+													<span class="minutes"></span>:<span class="seconds"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step step2">
+									<div class="step2_1">
+										<div class="photo">
+											<label>
+												<input type="file" name="file">
+
+												<div>
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+
+													<div class="title">Сделать фото</div>
+
+													<div class="desc">Сделайте снимок первого разворота паспорта</div>
+												</div>
+											</label>
+										</div>
+									</div>
+
+									<div class="step2_2">
+										<div class="checking">
+											<div class="loader"></div>
+											<div>Проверяем</div>
+										</div>
+
+										<div class="checked">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+											<div>Фото загружено</div>
+										</div>
+
+										<div class="submit">
+											<button type="button" class="submit_btn passport_data_btn full_w" disabled>Продолжить</button>
+										</div>
+									</div>
+
+									<div class="step2_3">
+										<div class="title">Паспортные данные</div>
+
+										<div class="line">
+											<div class="field">
+												<select name="" data-placeholder=" " class="error">
+													<option value="1">Мужской</option>
+													<option value="2">Женский</option>
+												</select>
+
+												<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+												<div class="label">Пол</div>
+											</div>
+											<div class="field_text error">Не верно заполнены данные</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Место рождения (как в паспорте)</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input passport">
+
+												<div class="label">Серия и номер паспорта</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input date">
+
+												<div class="label">Дата выдачи паспорта</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input podrazdel">
+
+												<div class="label">Код подразделения</div>
+											</div>
+										</div>
+
+										<div class="submit">
+											<button type="button" class="submit_btn next_btn full_w">Отправить</button>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="step step3">
+									<div class="section">
+										<div class="title">Сведения о работе</div>
+
+										<div class="line">
+											<div class="field">
+												<select name="" data-placeholder=" ">
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+												</select>
+
+												<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+												<div class="label">Вид деятельности</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<select name="" data-placeholder=" ">
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+												</select>
+
+												<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+												<div class="label">Должность</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="tel" name="" value="" class="input">
+
+												<div class="label">Дополнительный телефон</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Совокупный доход в рублях</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="section">
+										<div class="title">Адрес регистрации</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Регион</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Населенный пункт</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Улица</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Дом</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Корпус</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Квартира</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<label class="toggle_checkbox address_matches">
+													<input type="checkbox" name="matches">
+													<div class="check"></div>
+													<div>Мой адрес регистрации совпадает с фактическим</div>
+												</label>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="section address_matches_fields">
+										<div class="title">Адрес фактический</div>
+
+										<div class="line">
+											<div class="field">
+												<select name="" data-placeholder=" ">
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+												</select>
+
+												<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+												<div class="label">Регион</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Населенный пункт</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Улица</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Дом</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Корпус</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Квартира</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="section">
+										<div class="title big">Дополнительная информация</div>
+
+										<div class="title">Паспортные данные</div>
+
+										<div class="line">
+											<div class="field">
+												<select name="" data-placeholder=" ">
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+												</select>
+
+												<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+												<div class="label">Семейное положение</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<select name="" data-placeholder=" ">
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+												</select>
+
+												<svg class="arr" width="24px" height="24px"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+												<div class="label">Образование</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<label class="toggle_checkbox">
+													<input type="checkbox" name="obligations">
+													<div class="check"></div>
+													<div>Наличие обязательств</div>
+												</label>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">Для каких целей займ</div>
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<label class="toggle_checkbox">
+													<input type="checkbox" name="bankruptcy">
+													<div class="check"></div>
+													<div>Наличие дела о банкротстве</div>
+												</label>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="submit">
+										<button type="submit" class="submit_btn next_btn full_w">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<img data-src="images/bg_auth.png" alt="" class="bg lazyload">
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<button class="order_btn">Оформить займ</button>
+
+						<div class="phone">
+							<a href="tel:8 800 987 65 43">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<span>8 800 987 65 43</span>
+							</a>
+						</div>
+
+						<div class="email">
+							<a href="mailto:info@mail.ru">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+								<span>info@mail.ru</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="buttonUp">
+							<button class="btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_ver"></use></svg>
+							</button>
+						</div>
+
+						<div class="links">
+							<div><a href="/">Информация для заемщиков</a></div>
+							<div><a href="/">Карта сайта</a></div>
+							<div><a href="/">Базовый стандарт МФО</a></div>
+							<div><a href="/">Документы - регистрационные документы мфо</a></div>
+							<div><a href="/">Правила предоставления займов</a></div>
+							<div><a href="/">Вопрос-ответ</a></div>
+						</div>
+
+						<div class="text">
+							&copy; 2023 ООО "МКК "СВЕТОФОР". Все права защищены. ООО "МКК "СВЕТОФОР" ОГРН: 1237800121206 / Свидетельство №651303532004088<br>
+
+							Вся официальная, в том числе контактная информация ООО "МКК "СВЕТОФОР"  представлена на данном официальном сайте zaymer.ru. Остерегайтесь мошенников!<br>
+
+							Список акционеров (участников) и Схема взаимосвязей акционеров (участников) микрофинансовой компании и лиц, под контролем либо значительным влиянием которых находится микрофинансовая компания.<br>
+
+							ООО "МКК "СВЕТОФОР"  раскрывает информацию на странице в сети Интернет информационного агентства, аккредитованного ЦБ РФ на раскрытие информации.<br>
+
+							ООО "МКК "СВЕТОФОР"  использует cookie (файлы с данными о прошлых посещениях сайта) для персонализации сервисов и удобства пользователей. Оставаясь на сайте вы даете согласие на обработку данных.<br>
+
+							Подробнее - Информация об условиях и принципах обработки персональных данных
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<section class="modal" id="edit_phone_modal">
+			<div class="modal_title">Введите новый номер телефона</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Номер телефона">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Подтвердить</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="modal" id="load_modal">
+			<div class="loader"></div>
+			<span>Ожидание...</span>
+		</section>
+
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/countdown.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

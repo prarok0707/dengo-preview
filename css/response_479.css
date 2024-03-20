@@ -1,0 +1,371 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 18px;
+    }
+
+
+    .cont
+    {
+        padding: 0 10px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tab_content.active
+    {
+        padding: 10px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 16px 48px 16px 16px;
+    }
+
+
+    .accordion_item .head .arr
+    {
+        right: 12px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 16px 16px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .account .btn
+    {
+        padding: 0 20px;
+    }
+
+
+    header .menu .mini_modal
+    {
+        right: -10px;
+
+        padding: 76px 20px 25px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_title
+    {
+        font-size: 26px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .first_section .data .title
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-----------------------
+        Obtaining methods
+    -----------------------*/
+    .obtaining_methods .item img
+    {
+        max-height: 28px;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth
+    {
+        margin-bottom: 0;
+    }
+
+
+    .auth .form .sms_code > *
+    {
+        width: 49px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .tabs
+    {
+        width: calc(100% + 20px);
+        margin: 0 -10px 10px;
+        padding: 0 10px;
+
+        scroll-padding: 0 10px;
+    }
+
+
+
+    /*------------
+        Appeal
+    ------------*/
+    .appeal .data
+    {
+        width: calc(100% + 20px);
+        margin-right: -10px;
+        margin-left: -10px;
+        padding: 20px 10px;
+
+        border: none;
+    }
+
+
+    .appeal .info .text
+    {
+        text-align: center;
+    }
+
+
+    .appeal .btns .btn
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+    .appeal .btns .btn.orange
+    {
+        order: 1;
+    }
+
+
+
+    /*-----------
+        Order
+    -----------*/
+    .order .section > .title.big
+    {
+        font-size: 21px;
+    }
+
+
+    .order .approved .conditions
+    {
+        font-size: 14px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .order .form .sms_code .input
+    {
+        padding-right: 168px;
+    }
+
+
+    .order .form .sms_code .btn
+    {
+        right: 12px;
+
+        width: 140px;
+        padding-left: 16px;
+    }
+
+
+
+    /*--------------
+        Register
+    --------------*/
+    .register .step .title.big
+    {
+        font-size: 21px;
+    }
+
+
+
+    /*----------------
+        LK - Loans
+    ----------------*/
+    .lk .loans .empty .desc
+    {
+        font-size: 14px;
+
+        margin-top: 12px;
+        padding: 0 40px;
+    }
+
+
+
+    /*-------------------
+        LK - Security
+    -------------------*/
+    .lk .security .title span
+    {
+        display: block;
+    }
+
+
+    .lk .security .desc
+    {
+        font-size: 14px;
+
+        margin-top: 12px;
+        padding: 0 40px;
+    }
+
+
+
+    /*----------------
+        LK - Cards
+    ----------------*/
+    .lk .cards .empty .desc
+    {
+        font-size: 14px;
+
+        margin-top: 12px;
+        padding: 0 40px;
+    }
+
+
+    .lk .cards .add
+    {
+        width: 355px;
+    }
+
+
+    .lk .cards .add .head
+    {
+        padding: 24px;
+    }
+
+
+    .lk .cards .add .secure_3d img
+    {
+        height: 40px;
+    }
+
+    .lk .cards .add .logos > * + *
+    {
+        margin-left: 6px;
+    }
+
+
+    .lk .cards .add .logos img
+    {
+        height: 28px;
+    }
+
+
+    .lk .cards .add .form
+    {
+        padding: 12px;
+    }
+
+
+    .lk .cards .add .form .line
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .lk .cards .add .form .line .input
+    {
+        height: 54px;
+        padding-top: 20px;
+    }
+
+
+    .lk .cards .add .form .field .label
+    {
+        height: 54px;
+    }
+
+
+    .lk .cards .add .form .field .input:focus ~ .label,
+    .lk .cards .add .form .field .input.active ~ .label
+    {
+        height: 30px;
+        padding-top: 4px;
+    }
+
+
+    .lk .cards .add .form .date
+    {
+        margin-bottom: 0;
+    }
+
+
+    .lk .cards .add .form .date .sep
+    {
+        font-size: 16px;
+
+        width: 24px;
+    }
+
+
+    .lk .cards .add .form .date .field
+    {
+        width: 64px;
+    }
+
+
+    .lk .cards .add .form .date .input,
+    .lk .cards .add .form .date .label
+    {
+        height: 54px;
+    }
+
+
+    .lk .cards .add .form .cvv
+    {
+        margin-bottom: 0;
+    }
+
+
+    .lk .cards .add .form .cvv .input,
+    .lk .cards .add .form .cvv .label
+    {
+        height: 54px;
+    }
+
+    .repeat
+    {
+        margin: 24px auto;
+    }
+
+    .block_head .title .mob_hide
+    {
+        display: none;
+    }
+}

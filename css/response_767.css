@@ -1,0 +1,1155 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --bg: #f2f2f2;
+        --font_size: 15px;
+        --font_size_title: 22px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+    .swiper-horizontal > .swiper-scrollbar
+    {
+        display: block;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item
+    {
+        width: calc(100% + 20px);
+        margin-right: -10px;
+        margin-left: -10px;
+
+        background: none;
+    }
+
+
+    .accordion_item .head
+    {
+        padding: 20px 52px 20px 20px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 16px;
+    }
+
+
+    .accordion_item .head .arr
+    {
+        right: 16px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 0 20px 20px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        margin-bottom: 0;
+    }
+
+
+    header .cont > *
+    {
+        position: relative;
+        z-index: 9;
+    }
+
+
+    header .account .btn
+    {
+        padding: 0 24px;
+    }
+
+
+    header .menu
+    {
+        z-index: 5;
+    }
+
+
+    header .menu .btn
+    {
+        position: relative;
+        z-index: 9;
+    }
+
+
+    header .menu .mini_modal
+    {
+        z-index: 5;
+        top: 0;
+        right: -24px;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100vw;
+        height: 100svh;
+        margin: 0;
+        padding-top: 76px;
+    }
+
+    header .menu .mini_modal:before
+    {
+        position: absolute;
+        top: 52px;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 1px;
+
+        content: '';
+
+        background: #e0e0e0;
+    }
+
+
+    header .menu .links .sub
+    {
+        display: block;
+    }
+
+
+    header .menu .socials
+    {
+        margin-top: auto;
+    }
+
+
+    header .menu .socials .items
+    {
+        padding: 0 16px;
+    }
+
+
+    header .menu .socials img
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 40px;
+    }
+
+
+    .page_title
+    {
+        font-size: 32px;
+
+        text-align: center;
+    }
+
+
+    .page_head .bg
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_placeholder_color: #a5a5a5;
+    }
+
+
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .form .file
+    {
+        padding: 16px 0;
+    }
+
+    .form .file .exp
+    {
+        display: block;
+
+        margin-top: 16px;
+    }
+
+
+    .form .input
+    {
+        font-weight: 600;
+    }
+
+
+    .form .field .input:focus ~ .label,
+    .form .field .input.active ~ .label,
+    .form .field textarea:focus ~ .label,
+    .form .field textarea.active ~ .label,
+    .form .nice-select.open ~ .label,
+    .form .nice-select.selected ~ .label
+    {
+        font-size: 12px;
+        font-weight: 600;
+
+        padding-top: 6px;
+
+        /*color: #38b218;*/
+    }
+
+
+    .form .agree
+    {
+        padding: 20px 10px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 18px;
+
+        width: 100%;
+        height: 56px;
+    }
+
+
+    .form .checkbox .spoler_btn
+    {
+        right: 0;
+    }
+
+
+    .form .exp
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 32px;
+    }
+
+    .first_section .cont
+    {
+        height: auto;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+        padding: 24px 0;
+
+        text-align: center;
+    }
+
+
+    .first_section .data .title
+    {
+        font-size: 30px;
+    }
+
+
+    .first_section .data .desc
+    {
+        margin-top: 4px;
+    }
+
+
+    .first_section .calc
+    {
+        width: 100%;
+
+        box-shadow: none;
+    }
+
+
+    .first_section .bg
+    {
+        display: none;
+    }
+
+
+
+    /*----------
+        Calc
+    ----------*/
+    .calc .repeated_loan .btn
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        Questionnaire
+    -------------------*/
+    .questionnaire
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .questionnaire .data
+    {
+        padding: 0;
+
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    .questionnaire .block_head
+    {
+        margin-bottom: 24px;
+        padding: 0;
+    }
+
+
+    .questionnaire .form
+    {
+        padding: 0;
+    }
+
+
+
+    /*-----------------------
+        Obtaining methods
+    -----------------------*/
+    .obtaining_methods
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .obtaining_methods .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .obtaining_methods .row
+    {
+        justify-content: space-between;
+
+        margin-bottom: -17px;
+        margin-left: -17px;
+    }
+
+    .obtaining_methods .row > *
+    {
+        max-width: calc(16.666% - 17px);
+        margin-bottom: 17px;
+        margin-left: 17px;
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .why .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .reviews .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .reviews .review
+    {
+        border-color: transparent;
+    }
+
+
+
+    /*-----------------
+        Bottom text
+    -----------------*/
+    .bottom_text
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .bottom_text .text_block
+    {
+        padding: 0;
+
+        text-align: center;
+
+        border: none;
+        background: none;
+    }
+
+
+
+    /*----------
+        Auth
+    ----------*/
+    .auth
+    {
+        margin-bottom: 40px;
+        padding-top: 28px;
+    }
+
+
+    .auth .bg
+    {
+        display: none;
+    }
+
+
+    .auth .data
+    {
+        width: 100%;
+        padding: 0;
+
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    .auth .title
+    {
+        height: auto;
+        margin-bottom: 28px;
+    }
+
+
+    .auth .desc
+    {
+        font-size: 14px;
+
+        margin-top: -16px;
+        margin-bottom: 28px;
+    }
+
+    .auth .edit_phone_btn + .desc
+    {
+        margin-top: 0;
+    }
+
+
+    .auth .form .submit
+    {
+        padding-top: 65px;
+    }
+
+
+    .auth .form .recovery_link a
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .auth .agree
+    {
+        display: none;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .mob_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        margin-bottom: 40px;
+        padding-top: 28px;
+    }
+
+
+    .feedback .bg
+    {
+        display: none;
+    }
+
+
+    .feedback .data
+    {
+        width: 100%;
+        padding: 0;
+
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    .feedback .title
+    {
+        height: auto;
+        margin-bottom: 28px;
+    }
+
+
+    .feedback .desc
+    {
+        font-size: 14px;
+
+        margin-top: -16px;
+        margin-bottom: 28px;
+    }
+
+    .feedback .desc br
+    {
+        display: none;
+    }
+
+
+    .feedback .form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .feedback .form .submit
+    {
+        order: 3;
+    }
+
+
+    .feedback .form .agree
+    {
+        padding: 0;
+    }
+
+
+
+    /*------------
+        Appeal
+    ------------*/
+    .appeal .data
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 20px;
+
+        border: none;
+    }
+
+
+    .appeal .logo
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+    .appeal .info
+    {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .appeal .info .text
+    {
+        padding: 0 10px;
+    }
+
+
+
+    /*-----------
+        Order
+    -----------*/
+    .order
+    {
+        margin-bottom: 40px;
+        padding-top: 28px;
+    }
+
+
+    .order .bg
+    {
+        display: none;
+    }
+
+
+    .order .data
+    {
+        width: 100%;
+        padding: 0;
+
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    .order .section > .title
+    {
+        margin-bottom: 24px;
+    }
+
+    .order .section > .title.big
+    {
+        font-size: 24px;
+
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .order .steps
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .order .photo label
+    {
+        width: 221px;
+    }
+
+
+    .order .waiting
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .order .waiting .title
+    {
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .order .waiting .desc
+    {
+        font-size: 14px;
+
+        margin-top: 20px;
+    }
+
+
+    .order .negative_decision
+    {
+        margin-bottom: 0;
+    }
+
+
+    .order .negative_decision .title
+    {
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+    .order .negative_decision .desc
+    {
+        font-size: 14px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .order .approved
+    {
+        margin-bottom: 0;
+    }
+
+
+    .order .approved .mob_bg
+    {
+        padding: 30px 20px 10px;
+
+        border-radius: 8px;
+        background: #fff;
+    }
+
+
+    .order .approved .title
+    {
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+    .order .approved .desc
+    {
+        font-size: 14px;
+
+        margin-bottom: 28px;
+    }
+
+    .order .approved .desc br
+    {
+        display: none;
+    }
+
+
+    .order .add_card .title
+    {
+        margin-bottom: 4px;
+    }
+
+
+    .order .form .submit
+    {
+        padding-top: 17px;
+    }
+
+
+
+    /*--------------
+        Register
+    --------------*/
+    .register
+    {
+        margin-bottom: 40px;
+        padding-top: 28px;
+    }
+
+
+    .register .bg
+    {
+        display: none;
+    }
+
+
+    .register .data
+    {
+        width: 100%;
+        padding: 0;
+
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    .register .step2_3 .title,
+    .register .section > .title
+    {
+        margin-bottom: 24px;
+    }
+
+    .register .step2_3 .title.big,
+    .register .section > .title.big
+    {
+        font-size: 24px;
+
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .register .steps
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .register .checking,
+    .register .checked
+    {
+        font-size: 18px;
+    }
+
+
+    .order .form .submit
+    {
+        padding-top: 17px;
+    }
+
+
+
+    /*--------
+        LK
+    --------*/
+    .lk .bg
+    {
+        top: -148px;
+    }
+
+
+
+    /*-------------------
+        LK - Feedback
+    -------------------*/
+    .lk .feedback .data
+    {
+        padding: 0;
+    }
+
+
+    .lk .feedback .desc
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .lk .feedback .form .submit
+    {
+        padding-top: 20px;
+    }
+
+
+
+    /*----------------
+        LK - Cards
+    ----------------*/
+    .lk .cards .add
+    {
+        width: 432px;
+        margin-top: 40px;
+    }
+
+
+    .lk .cards .add .head
+    {
+        padding: 20px;
+    }
+
+
+    .lk .cards .add .secure_3d img
+    {
+        height: 48px;
+    }
+
+    .lk .cards .add .logos > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+    .lk .cards .add .logos img
+    {
+        height: 32px;
+    }
+
+
+    .lk .cards .add .form
+    {
+        padding: 28px 20px 24px;
+    }
+
+
+    .lk .cards .add .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .lk .cards .add .form .date
+    {
+        margin-bottom: 0;
+    }
+
+
+    .lk .cards .add .form .date .sep
+    {
+        font-size: 20px;
+
+        width: 28px;
+    }
+
+
+    .lk .cards .add .form .date .field
+    {
+        width: 80px;
+    }
+
+
+    .lk .cards .add .form .date .input,
+    .lk .cards .add .form .date .label
+    {
+        font-size: 16px;
+
+        height: 60px;
+    }
+
+
+    .lk .cards .add .form .cvv
+    {
+        flex-direction: column;
+
+        margin-bottom: 0;
+    }
+
+
+    .lk .cards .add .form .cvv .exp
+    {
+        display: block;
+        justify-content: flex-start;
+        order: 2;
+
+        width: 100%;
+        margin-top: 8px;
+        margin-right: 0;
+
+        text-align: left;
+    }
+
+
+    .lk .cards .add .form .cvv .input,
+    .lk .cards .add .form .cvv .label
+    {
+        font-size: 16px;
+
+        height: 60px;
+    }
+
+
+
+    /*-------------------
+        LK - Requests
+    -------------------*/
+    .lk .requests .waiting
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .lk .requests .waiting .title
+    {
+        font-size: 24px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .lk .requests .waiting .desc
+    {
+        font-size: 14px;
+
+        margin-top: 20px;
+    }
+
+
+
+    .lk .requests .negative_decision
+    {
+        padding: 32px;
+    }
+
+
+    .lk .requests .negative_decision .title
+    {
+        font-size: 24px;
+    }
+
+
+    .lk .requests .negative_decision .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .lk .requests .negative_decision .link
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 34px;
+    }
+
+
+    footer .row + .row
+    {
+        margin-top: 34px;
+    }
+
+
+    footer .logo
+    {
+        display: none;
+    }
+
+
+    footer .order_btn
+    {
+        width: 100%;
+
+        border-radius: 8px;
+    }
+
+
+    footer .phone,
+    footer .email
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    footer .phone a,
+    footer .email a
+    {
+        font-size: 18px;
+
+        justify-content: center;
+
+        width: 100%;
+
+        border-color: transparent;
+        background: #fff;
+    }
+
+
+    footer .buttonUp
+    {
+        display: block;
+    }
+
+
+    footer .links
+    {
+        width: 100%;
+        margin-top: 34px;
+
+        text-align: center;
+    }
+
+
+    footer .links > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    footer .text
+    {
+        margin-top: 34px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 20px;
+
+        min-height: 0;
+        padding-top: 20px;
+    }
+
+
+    #edit_phone_modal .form
+    {
+        padding: 0;
+    }
+
+
+    #edit_phone_modal .form .line
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+
+    #edit_phone_modal .form .submit
+    {
+        width: 100%;
+    }
+}
