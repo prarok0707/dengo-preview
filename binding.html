@@ -1502,7 +1502,7 @@
                         src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzkiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA3OSA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjM1ODY0IDBDMi4xNDk1IDAgMC4zNTg2NDMgMS43OTA4NiAwLjM1ODY0MyA0VjQ2QzAuMzU4NjQzIDQ4LjIwOTEgMi4xNDk1IDUwIDQuMzU4NjQgNTBINzQuMzU4NkM3Ni41Njc4IDUwIDc4LjM1ODYgNDguMjA5MSA3OC4zNTg2IDQ2VjRDNzguMzU4NiAxLjc5MDg2IDc2LjU2NzggMCA3NC4zNTg2IDBINC4zNTg2NFpNMTEuMzU4NiAxNy4wMDI2SDE2Ljg2NDZDMTYuODkzIDE3LjAwMjYgMTYuOTI0NyAxNy4wMDIxIDE2Ljk1OTIgMTcuMDAxNUMxNy41MzMgMTYuOTkxNyAxOC45MDQ3IDE2Ljk2ODQgMTkuNTM0MiAxOS4xNzE2QzIwLjAzNDcgMjAuNjczMyAyMC43MDIxIDIzLjAwOTEgMjEuNzAzMiAyNi41MTI5SDIyLjAzNjlDMjIuNzI2MSAyMy45ODU4IDIzLjMzNjIgMjIuMDEyMyAyMy43NTg0IDIwLjY0NjhMMjMuNzU4NCAyMC42NDY3QzIzLjk0OTQgMjAuMDI4OSAyNC4xMDIgMTkuNTM1NSAyNC4yMDU5IDE5LjE3MTZDMjQuODM0NiAxNi45NzE0IDI2LjM1MTQgMTYuOTkxNyAyNy4wODMyIDE3LjAwMTRDMjcuMTI4MyAxNy4wMDIgMjcuMTcwNCAxNy4wMDI2IDI3LjIwOTIgMTcuMDAyNkgzMi4zODE1VjMzLjAySDI3LjA0MjNWMjMuNTA5N0gyNi43MDg2TDIzLjg3MjIgMzMuMDJIMTkuODY3OUwxNy4wMzE1IDIzLjUwOTdIMTYuNTMwOVYzMy4wMkgxMS4zNTg2VjE3LjAwMjZaTTM0LjU1MDUgMTcuMDAyNkgzOS44ODk2VjI2LjUxMjlINDAuMzkwMkw0My44OTQgMTguNjcxMUM0NC41NjE0IDE3LjE2OTUgNDYuMDYzIDE3LjAwMjYgNDYuMDYzIDE3LjAwMjZINTEuMDY4NFYzMy4wMkg0NS43MjkzVjIzLjUwOTdINDUuMzk1Nkw0MS44OTE4IDMxLjM1MTVDNDEuMjI0NCAzMi44NTMyIDM5LjU1NTkgMzMuMDIgMzkuNTU1OSAzMy4wMkgzNC41NTA1VjE3LjAwMjZaTTU4LjI0MjkgMjguMTgxNFYzMy4wMkg1My4yMzc0VjI0LjY3NzZINjkuNTg4NUM2OC45MjExIDI2LjY3OTggNjYuNTg1MyAyOC4xODE0IDYzLjkxNTcgMjguMTgxNEg1OC4yNDI5Wk02OS45MjIgMjMuNjc2NkM3MC41ODk0IDIwLjY3MzMgNjguNTg3MyAxNy4wMDI3IDY0LjI0OTIgMTcuMDAyN0g1Mi45MDM2QzUzLjIzNzMgMjAuNTA2NSA1Ni4yNDA1IDIzLjY3NjYgNTkuNDEwNiAyMy42NzY2SDY5LjkyMloiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xNDczXzUyMDUpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTQ3M181MjA1IiB4MT0iMzkuMzU4NiIgeTE9IjAiIHgyPSIzOS4zNTg2IiB5Mj0iNTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzUxNTE1MSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNBREFEQUQiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K" />
                     </div>
                   </div>
-                  <form action="" class="form">
+                  <form class="form" action="${ACTION}" method="post">
                     <input
                       name="${CARDHOLDER}"
                       type="hidden"
@@ -1513,6 +1513,7 @@
                           tabindex="1"
                           id="card-number"
                           class="input"
+                          name="${CARDNO}"
                           type="tel" />
                         <div class="label">Номер карты</div>
                       </div>
@@ -1524,6 +1525,7 @@
                             tabindex="2"
                             id="month"
                             class="input"
+                            name="${EXPMONTH}"
                             type="tel"
                             autocomplete="off" />
                           <div class="label">ММ</div>
@@ -1534,6 +1536,7 @@
                             tabindex="3"
                             id="year"
                             class="input"
+                            name="${EXPYEAR}"
                             type="tel"
                             autocomplete="off" />
                           <div class="label">ГГ</div>
@@ -1548,6 +1551,7 @@
                             tabindex="4"
                             id="cvv"
                             class="input"
+                            name="${CVV2}"
                             type="password" />
                           <div class="label">CVC</div>
                         </div>
