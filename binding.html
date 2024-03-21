@@ -1579,6 +1579,23 @@
       </div>
     </div>
     <script>
+      // Перемещает фокус к предыдущему input[tabindex]
+      const tabindexInputs = document.querySelectorAll('input[tabindex]');
+      tabindexInputs.forEach((input) => {
+        input.addEventListener('keydown', (event) => {
+          const code = event.key;
+          const target = event.target;
+          if (code !== 'Backspace' || !!target.value.trim()) return;
+
+          const prevTabindex = target.getAttribute('tabindex') - 1;
+          const prevInputForFocus = document.querySelector(
+            `input[tabindex='${prevTabindex}']`,
+          );
+
+          if (prevInputForFocus) prevInputForFocus.focus();
+        });
+      });
+
       // Добавляет/удаляет класс: active для всех input
       // Удаляет класс: error при вводе для всех input
       const inputs = document.querySelectorAll('input');
