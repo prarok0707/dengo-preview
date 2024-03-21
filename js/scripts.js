@@ -434,38 +434,54 @@ document.addEventListener('DOMContentLoaded', function () {
 		setRegisterStep()
 	})
 
+  // Показывает/скрывает меню
+  const menu = () => {
+    const attr = {
+      menu: 'data-menu',
+      button: 'data-menu-toggle',
+    };
 
-	// Мини всплывающие окна
-	$('.mini_modal_btn').click(function(e) {
-		e.preventDefault()
+    const cls = {
+      active: 'active',
+    };
 
-		const modalId = $(this).data('modal-id')
+    const body = document.body;
+    const elem = document.querySelector(`[${attr.menu}]`);
+    const button = document.querySelector(`[${attr.button}]`);
+    
+    if (!elem || !button) return;
 
-		if ($(this).hasClass('active')) {
-			$(this).removeClass('active')
-			$('.mini_modal').removeClass('active')
+    const handleClickBody = ({ target }) => {
+      const hasElem = target.closest(`[${attr.menu}]`);
+      const hasButton = target.closest(`[${attr.button}]`);
 
-			if (is_touch_device()) $('body').css('cursor', 'default')
-		} else {
-			$('.mini_modal_btn').removeClass('active')
-			$(this).addClass('active')
+      if (hasElem === elem || hasButton === button) return;
 
-			$('.mini_modal').removeClass('active')
-			$(modalId).addClass('active')
+      body.style.removeProperty('overflow');
+      elem.classList.remove(cls.active);
+      button.classList.remove(cls.active);
+    };
 
-			if (is_touch_device()) $('body').css('cursor', 'pointer')
-		}
-	})
+    const handleToggleMenu = () => {
+      elem.classList.toggle(cls.active);
+      button.classList.toggle(cls.active);
 
-	// Закрываем всплывашку при клике за её пределами
-	$(document).click(e => {
-		if ($(e.target).closest('.modal_cont').length === 0) {
-			$('.mini_modal, .mini_modal_btn').removeClass('active')
+      if (elem.classList.contains(cls.active)) {
+        if (body.offsetWidth < 768) body.style.overflow = 'hidden';
 
-			if (is_touch_device()) $('body').css('cursor', 'default')
-		}
-	})
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      } else {
+        body.style.removeProperty('overflow');
+      }
+    };
 
+    body.addEventListener('click', handleClickBody);
+    button.addEventListener('click', handleToggleMenu);
+  };
+  menu();
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false

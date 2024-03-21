@@ -1575,7 +1575,7 @@
       </div>
     </div>
     <script>
-      // Перемещает фокус к предыдущему input[tabindex]
+      // Перемещает фокус к предыдущему input[tabindex] если input пуст
       const tabindexInputs = document.querySelectorAll('input[tabindex]');
       tabindexInputs.forEach((input) => {
         input.addEventListener('keydown', (event) => {

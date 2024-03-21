@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <title>Заголовок страницы</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="msapplication-TileColor" content="#F57E3B" />
+    <meta name="theme-color" content="#F57E3B" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" async />
+    <link rel="stylesheet" href="css/swiper.css" async />
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" async />
+    <link rel="stylesheet" href="css/fancybox.css" async />
+    <link rel="stylesheet" href="css/styles.css" async />
+    <link
+      rel="stylesheet"
+      href="css/response_1247.css"
+      media="print, (max-width: 1247px)"
+      async />
+    <link
+      rel="stylesheet"
+      href="css/response_1023.css"
+      media="print, (max-width: 1023px)"
+      async />
+    <link
+      rel="stylesheet"
+      href="css/response_767.css"
+      media="print, (max-width: 767px)"
+      async />
+    <link
+      rel="stylesheet"
+      href="css/response_479.css"
+      media="(max-width: 479px)"
+      async />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="main">
+        <header>
+          <div class="cont row">
+            <div class="logo"><img src="images/logo.svg" alt="" /></div>
+            <div class="account"><button class="btn">Войти</button></div>
+            <div class="menu modal_cont">
+              <button class="btn mini_modal_btn" data-menu-toggle>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#ic_menu"></use>
+                </svg>
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#ic_close"></use>
+                </svg>
+              </button>
+              <div class="mini_modal" data-menu>
+                <div class="links">
+                  <div><a href="/">Личный кабинет</a></div>
+                  <div><a href="/">Центр поддержки</a></div>
+                  <div><a href="/">Юридические документы</a></div>
+                  <div><a href="/">Вопросы и ответы</a></div>
+                  <div><a href="/">Пожаловаться</a></div>
+                </div>
+                <div class="socials">
+                  <div class="label">DenGo в соцсетях</div>
+                  <div class="items">
+                    <a href="/" target="_blank" rel="noopener nofollow"
+                      ><img src="images/ic_soc_odnokl.png" alt="" /> </a
+                    ><a href="/" target="_blank" rel="noopener nofollow"
+                      ><img src="images/ic_soc_vk.png" alt="" /> </a
+                    ><a href="/" target="_blank" rel="noopener nofollow"
+                      ><img src="images/ic_soc_dzen.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="first_section">
+          <div class="cont row">
+            <div class="data">
+              <div class="title">Первый заем под <span>0%</span></div>
+              <div class="desc">
+                При условии возврата займа в срок.<br /><a href="/"
+                  >Условия акции.</a
+                >
+              </div>
+            </div>
+            <form action="" class="calc form tabs_container">
+              <div class="tabs">
+                <button
+                  data-content="#form_tab1"
+                  data-level="level1"
+                  class="btn active">
+                  Первый займ
+                </button>
+                <button
+                  data-content="#form_tab2"
+                  data-level="level1"
+                  class="btn">
+                  Повторный займ
+                </button>
+              </div>
+              <div class="tab_content level1 active" id="form_tab1">
+                <div class="price_range">
+                  <div class="label">Сумма займа:</div>
+                  <div class="field">
+                    <select name="price" class="price_select skip">
+                      <option value="1000">1 000 ₽</option>
+                      <option value="2000">2 000 ₽</option>
+                      <option value="3000">3 000 ₽</option>
+                      <option value="4000">4 000 ₽</option>
+                      <option value="5000">5 000 ₽</option>
+                      <option value="6000">6 000 ₽</option>
+                      <option value="7000">7 000 ₽</option>
+                      <option value="8000">8 000 ₽</option>
+                      <option value="9000">9 000 ₽</option>
+                      <option value="10000">10 000 ₽</option>
+                      <option value="11000">11 000 ₽</option>
+                      <option value="12000">12 000 ₽</option>
+                      <option value="13000">13 000 ₽</option>
+                      <option value="14000">14 000 ₽</option>
+                      <option value="15000" selected="selected">
+                        15 000 ₽
+                      </option>
+                    </select>
+                    <svg class="arr" width="24px" height="24px">
+                      <use xlink:href="images/sprite.svg#ic_arr_ver"></use>
+                    </svg>
+                  </div>
+                  <input
+                    type="hidden"
+                    id="price_range"
+                    name="price_range"
+                    value="" />
+                </div>
+                <div class="date_range">
+                  <div class="label">Срок займа:</div>
+                  <div class="field">
+                    <select name="date" class="date_select skip">
+                      <option value="1">1 день</option>
+                      <option value="2">2 дня</option>
+                      <option value="3">3 дня</option>
+                      <option value="4">4 дня</option>
+                      <option value="5">5 дней</option>
+                      <option value="6">6 дней</option>
+                      <option value="7">7 дней</option>
+                      <option value="8">8 дней</option>
+                      <option value="9">9 дней</option>
+                      <option value="10">10 дней</option>
+                      <option value="11">11 дней</option>
+                      <option value="12">12 дней</option>
+                      <option value="13">13 дней</option>
+                      <option value="14">14 дней</option>
+                      <option value="15" selected="selected">15 дней</option>
+                      <option value="16">16 дней</option>
+                      <option value="17">17 дней</option>
+                      <option value="18">18 дней</option>
+                      <option value="19">19 дней</option>
+                      <option value="20">20 дней</option>
+                      <option value="21">21 день</option>
+                      <option value="22">22 дня</option>
+                      <option value="23">23 дня</option>
+                      <option value="24">24 дня</option>
+                      <option value="25">25 дней</option>
+                      <option value="26">26 дней</option>
+                      <option value="27">27 дней</option>
+                      <option value="28">28 дней</option>
+                      <option value="29">29 дней</option>
+                      <option value="30">30 дней</option>
+                    </select>
+                    <svg class="arr" width="24px" height="24px">
+                      <use xlink:href="images/sprite.svg#ic_arr_ver"></use>
+                    </svg>
+                  </div>
+                  <input
+                    type="hidden"
+                    id="date_range"
+                    name="date_range"
+                    value="" />
+                </div>
+                <div class="totals line">
+                  <div class="price">
+                    <div class="label">Возвращаете:</div>
+                    <div class="val">
+                      <div class="old"><span>24 809</span></div>
+                      <div class="new"><span>0</span> ₽</div>
+                    </div>
+                  </div>
+                  <div class="date">
+                    <div class="label">Дата возврата</div>
+                    <div class="val">31.06.2024</div>
+                  </div>
+                </div>
+                <div class="submit">
+                  <button type="submit" class="submit_btn">
+                    Получить бесплатно
+                  </button>
+                </div>
+                <div class="quike_order">
+                  <div class="item">
+                    <a href="/"
+                      ><div class="logo">
+                        <img
+                          data-src="images/tmp/quike_order_logo1.svg"
+                          alt=""
+                          class="lazyload" />
+                      </div>
+                      <span>Быстрая заявка<br />через госуслуги</span>
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_arr_hor"></use></svg
+                    ></a>
+                  </div>
+                  <div class="item">
+                    <a href="/"
+                      ><div class="logo">
+                        <img
+                          data-src="images/tmp/quike_order_logo2.svg"
+                          alt=""
+                          class="lazyload" />
+                      </div>
+                      <span>Быстрая заявка<br />Тинькофф ID</span>
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_arr_hor"></use></svg
+                    ></a>
+                  </div>
+                  <div class="item">
+                    <a href="/"
+                      ><div class="logo">
+                        <img
+                          data-src="images/tmp/quike_order_logo3.png"
+                          alt=""
+                          class="lazyload" />
+                      </div>
+                      <span>Быстрая заявка Сбер ID</span>
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_arr_hor"></use></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab_content level1" id="form_tab2">
+                <div class="repeated_loan">
+                  <img
+                    data-src="images/repeated_loan_img.png"
+                    alt=""
+                    class="lazyload" />
+                  <div class="title">
+                    Специальные условия,<br />скидки и повышенные<br />лимиты до
+                    100 000 рублей<br />в вашем личном кабинете.
+                  </div>
+                  <button class="btn modal_btn" data-modal="">
+                    Войти в личный кабинет
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <img
+            data-src="images/bg_first_section.png"
+            alt=""
+            class="bg lazyload" />
+        </section>
+        <section class="questionnaire">
+          <div class="cont">
+            <div class="data">
+              <div class="block_head center">
+                <div class="title">
+                  Заполните анкету
+                  <span
+                    >и заберите деньги
+                    <span class="mob_hide">без процентов</span></span
+                  >
+                </div>
+              </div>
+              <form action="" class="form">
+                <div class="columns">
+                  <div class="line">
+                    <div class="field">
+                      <input type="text" name="" value="" class="input" />
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_active_field"></use>
+                      </svg>
+                      <div class="label">Имя*</div>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <div class="field">
+                      <input type="text" name="" value="" class="input date" />
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_active_field"></use>
+                      </svg>
+                      <div class="label">Дата рождения*</div>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <div class="field">
+                      <input type="tel" name="" value="" class="input" />
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_active_field"></use>
+                      </svg>
+                      <div class="label">Номер телефона*</div>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <div class="field">
+                      <input type="text" name="" value="" class="input" />
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_active_field"></use>
+                      </svg>
+                      <div class="label">Фамилия*</div>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <div class="field">
+                      <input type="email" name="" value="" class="input" />
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/sprite.svg#ic_active_field"></use>
+                      </svg>
+                      <div class="label">Почта*</div>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <div class="field">
+                      <input type="text" name="" value="" class="input" />
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#ic_done_field"></use>
+                      </svg>
+                      <div class="label">Отчество</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="agree">
+                  <label class="checkbox agree_all"
+                    ><input type="checkbox" name="agree_all" />
+                    <div class="check">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#ic_check"></use>
+                      </svg>
+                    </div>
+                    <div>Я соглашаюсь с нижеуказанными пунктами</div>
+                    <button class="spoler_btn" type="button">
+                      <svg class="icon">
+                        <use xlink:href="images/sprite.svg#ic_arr_ver"></use>
+                      </svg></button
+                  ></label>
+                  <div class="sub">
+                    <div>
+                      <label class="checkbox"
+                        ><input type="checkbox" name="agree" />
+                        <div class="check">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#ic_check"></use>
+                          </svg>
+                        </div>
+                        <div>
+                          Нажимая, я принимаю условия Соглашения обиспользовании
+                          аналога собственноручной подписи.
+                        </div></label
+                      >
+                    </div>
+                    <div>
+                      <label class="checkbox"
+                        ><input type="checkbox" name="agree" />
+                        <div class="check">
+                          <svg class="icon">
+                            <use xlink:href="images/sprite.svg#ic_check"></use>
+                          </svg>
+                        </div>
+                        <div>
+                          Я даю согласие на обработку и хранение моих
+                          персональных данных, в том числе на автоматизированную
+                          обработку персональных данных.
+                        </div></label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="submit">
+                  <button type="submit" class="submit_btn">Продолжить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="obtaining_methods">
+          <div class="cont">
+            <div class="block_head center">
+              <div class="title">Способы получения</div>
+            </div>
+            <div class="row">
+              <div class="item">
+                <img
+                  data-src="images/tmp/obtaining_methods_logo1.png"
+                  alt=""
+                  class="lazyload" />
+              </div>
+              <div class="item">
+                <img
+                  data-src="images/tmp/obtaining_methods_logo2.png"
+                  alt=""
+                  class="lazyload" />
+              </div>
+              <div class="item">
+                <img
+                  data-src="images/tmp/obtaining_methods_logo3.png"
+                  alt=""
+                  class="lazyload" />
+              </div>
+              <div class="item">
+                <img
+                  data-src="images/tmp/obtaining_methods_logo4.png"
+                  alt=""
+                  class="lazyload" />
+              </div>
+              <div class="item">
+                <img
+                  data-src="images/tmp/obtaining_methods_logo5.png"
+                  alt=""
+                  class="lazyload" />
+              </div>
+              <div class="item">
+                <img
+                  data-src="images/tmp/obtaining_methods_logo6.png"
+                  alt=""
+                  class="lazyload" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="why">
+          <div class="cont">
+            <div class="block_head center">
+              <div class="title">Почему люди выбирают Den<span>Go</span></div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item bg1">
+                    <div class="name">Первые 3<br />займа под 0%! *</div>
+                    <div class="thumb">
+                      <img
+                        data-src="images/tmp/why_thumb1.png"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item bg2">
+                    <div class="name">
+                      Бесплатное продление на 7 дней на первый займ
+                    </div>
+                    <div class="thumb">
+                      <img
+                        data-src="images/tmp/why_thumb2.png"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item bg3">
+                    <div class="name">Абсолютно любая кредитная история</div>
+                    <div class="thumb">
+                      <img
+                        data-src="images/tmp/why_thumb3.png"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item bg4">
+                    <div class="name">
+                      Настоящий ОНЛАЙН займ. Никаких звонков ни вам, ни вашим
+                      друзьям
+                    </div>
+                    <div class="thumb">
+                      <img
+                        data-src="images/tmp/why_thumb4.png"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item bg5">
+                    <div class="name">
+                      Никаких навязанных дополнительных услуг к займу. Никаких
+                      бесполезных страховок.
+                    </div>
+                    <div class="thumb">
+                      <img
+                        data-src="images/tmp/why_thumb5.png"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="cont">
+            <div class="block_head center"><div class="title">Отзывы</div></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="photo">
+                      <img
+                        data-src="images/tmp/review_photo.jpg"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                    <div class="name">Михаил Н.</div>
+                    <div class="text">
+                      Сегодня в очередной раз обратился в офис Россельхозбанка в
+                      г.Полярный. Очередей как всегда нет. В офисе комфортная
+                      атмосфера. Сотрудники как всегда рады клиенту, что не
+                      может не радовать.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="photo">
+                      <img
+                        data-src="images/tmp/review_photo.jpg"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                    <div class="name">Михаил Н.</div>
+                    <div class="text">
+                      Сегодня в очередной раз обратился в офис Россельхозбанка в
+                      г.Полярный. Очередей как всегда нет. В офисе комфортная
+                      атмосфера. Сотрудники как всегда рады клиенту, что не
+                      может не радовать.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="photo">
+                      <img
+                        data-src="images/tmp/review_photo.jpg"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                    <div class="name">Михаил Н.</div>
+                    <div class="text">
+                      Сегодня в очередной раз обратился в офис Россельхозбанка в
+                      г.Полярный. Очередей как всегда нет. В офисе комфортная
+                      атмосфера. Сотрудники как всегда рады клиенту, что не
+                      может не радовать.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review">
+                    <div class="photo">
+                      <img
+                        data-src="images/tmp/review_photo.jpg"
+                        alt=""
+                        class="swiper-lazy" />
+                    </div>
+                    <div class="name">Михаил Н.</div>
+                    <div class="text">
+                      Сегодня в очередной раз обратился в офис Россельхозбанка в
+                      г.Полярный. Очередей как всегда нет. В офисе комфортная
+                      атмосфера. Сотрудники как всегда рады клиенту, что не
+                      может не радовать.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="all_link"><a href="/">Все отзывы</a></div>
+          </div>
+        </section>
+        <section class="bottom_text">
+          <div class="cont">
+            <div class="text_block">
+              <p><b>Годовая процентная ставка – 292% годовых.</b></p>
+              <p>
+                Проценты и пеня, начисляемые по Договору потребительского займа,
+                не могут превышать 1,3 размер суммы займа.
+              </p>
+              <p>
+                <b
+                  >Пример расчета процентной ставки займа размером 15 000 руб.
+                  на срок 30 дней:</b
+                >
+              </p>
+              <p>
+                Процентная ставка за пользование займом в каждый из 30 дней -
+                0,8% в день. Полная стоимость займа - 292% годовых.<br />Сумма
+                начисленных процентов за 30 дней пользования займом - 3 600
+                руб.<br />Сумма к возврату: 15 000 + 3 600 = 18 600 руб.<br />Проценты
+                за пользование суммой займа при нарушении срока возврата займа и
+                начисленных процентов на 10 дней - 1 200 руб.<br />Пеня на сумму
+                займа в размере 20% годовых от суммы займа начисляется за
+                просрочку возврата займа на 10 дней - 82,1 руб.<br />Сумма к
+                возврату при нарушении срока возврата займа и начисленных
+                процентов на 10 дней: 18 600 + 1 200 + 82,1 = 19 882,10 руб.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="cont">
+          <div class="row">
+            <div class="logo"><img src="images/logo.svg" alt="" /></div>
+            <button class="order_btn">Оформить займ</button>
+            <div class="phone">
+              <a href="tel:8 800 987 65 43"
+                ><svg class="icon">
+                  <use xlink:href="images/sprite.svg#ic_phone"></use>
+                </svg>
+                <span>8 800 987 65 43</span></a
+              >
+            </div>
+            <div class="email">
+              <a href="mailto:info@mail.ru"
+                ><svg class="icon">
+                  <use xlink:href="images/sprite.svg#ic_email"></use>
+                </svg>
+                <span>info@mail.ru</span></a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="buttonUp">
+              <button class="btn">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#ic_arrow_ver"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="links">
+              <div><a href="/">Информация для заемщиков</a></div>
+              <div><a href="/">Карта сайта</a></div>
+              <div><a href="/">Базовый стандарт МФО</a></div>
+              <div>
+                <a href="/">Документы - регистрационные документы мфо</a>
+              </div>
+              <div><a href="/">Правила предоставления займов</a></div>
+              <div><a href="/">Вопрос-ответ</a></div>
+            </div>
+            <div class="text">
+              &copy; 2023 ООО "МКК "СВЕТОФОР". Все права защищены. ООО "МКК
+              "СВЕТОФОР" ОГРН: 1237800121206 / Свидетельство №651303532004088<br />Вся
+              официальная, в том числе контактная информация ООО "МКК
+              "СВЕТОФОР"  представлена на данном официальном сайте zaymer.ru.
+              Остерегайтесь мошенников!<br />Список акционеров (участников) и
+              Схема взаимосвязей акционеров (участников) микрофинансовой
+              компании и лиц, под контролем либо значительным влиянием которых
+              находится микрофинансовая компания.<br />ООО "МКК "СВЕТОФОР" 
+              раскрывает информацию на странице в сети Интернет информационного
+              агентства, аккредитованного ЦБ РФ на раскрытие информации.<br />ООО
+              "МКК "СВЕТОФОР"  использует cookie (файлы с данными о прошлых
+              посещениях сайта) для персонализации сервисов и удобства
+              пользователей. Оставаясь на сайте вы даете согласие на обработку
+              данных.<br />Подробнее - Информация об условиях и принципах
+              обработки персональных данных
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/nice-select2.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/imask.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+      const menu = () => {
+        const attr = {
+          menu: 'data-menu',
+          button: 'data-menu-toggle',
+        };
+
+        const cls = {
+          active: 'active',
+        };
+
+        const body = document.body;
+        const elem = document.querySelector(`[${attr.menu}]`);
+        const button = document.querySelector(`[${attr.button}]`);
+
+        if (!elem || !button) return;
+
+        const handleClickBody = ({ target }) => {
+          const hasElem = target.closest(`[${attr.menu}]`);
+          const hasButton = target.closest(`[${attr.button}]`);
+
+          if (hasElem === elem || hasButton === button) return;
+
+          body.style.removeProperty('overflow');
+          elem.classList.remove(cls.active);
+          button.classList.remove(cls.active);
+        };
+
+        const handleToggleMenu = () => {
+          elem.classList.toggle(cls.active);
+          button.classList.toggle(cls.active);
+
+          if (elem.classList.contains(cls.active)) {
+            if (body.offsetWidth < 768) body.style.overflow = 'hidden';
+
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+          } else {
+            body.style.removeProperty('overflow');
+          }
+        };
+
+        body.addEventListener('click', handleClickBody);
+        button.addEventListener('click', handleToggleMenu);
+      };
+      menu();
+    </script>
+  </body>
+</html>

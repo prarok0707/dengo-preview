@@ -658,12 +658,18 @@ header .menu .btn .icon + .icon
     height: 21px;
 }
 
-
-header .menu .btn:hover,
 header .menu .btn.active
 {
     color: #fff;
     background: #f57e3b;
+}
+
+@media (any-hover: hover) {
+  header .menu .btn:hover
+  {
+      color: #fff;
+      background: #f57e3b;
+  }
 }
 
 header .menu .btn.active .icon
@@ -698,6 +704,8 @@ header .menu .links
     line-height: 120%;
 
     color: #39363a;
+
+    overflow-y: auto;
 }
 
 header .menu .links > * + *
