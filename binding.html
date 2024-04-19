@@ -1,1760 +1,1873 @@
-<!doctype html><html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="format-detection" content="telephone=no"><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"><title>Заголовок страницы</title><meta name="description" content=""><meta name="keywords" content=""><meta name="msapplication-TileColor" content="#F57E3B"><meta name="theme-color" content="#F57E3B"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><style>/*------------------
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <title>Заголовок страницы</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="msapplication-TileColor" content="#F57E3B" />
+    <meta name="theme-color" content="#F57E3B" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      /*------------------
     Reset styles
 ------------------*/
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
 
-    scroll-margin-top: 24px;
-  }
+        scroll-margin-top: 24px;
+      }
 
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
 
-  html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
 
-  body {
-    margin: 0;
+      body {
+        margin: 0;
 
-    overscroll-behavior: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-overflow-scrolling: touch;
-    text-rendering: optimizeLegibility;
-    text-decoration-skip: objects;
-  }
+        overscroll-behavior: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-overflow-scrolling: touch;
+        text-rendering: optimizeLegibility;
+        text-decoration-skip: objects;
+      }
 
-  img {
-    border-style: none;
-  }
+      img {
+        border-style: none;
+      }
 
-  textarea {
-    overflow: auto;
-  }
+      textarea {
+        overflow: auto;
+      }
 
-  input,
-  textarea,
-  input:active,
-  textarea:active,
-  button {
-    margin: 0;
+      input,
+      textarea,
+      input:active,
+      textarea:active,
+      button {
+        margin: 0;
 
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    outline: none transparent !important;
-    box-shadow: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        outline: none transparent !important;
+        box-shadow: none;
 
-    -webkit-appearance: none;
-    appearance: none;
-    -moz-outline: none !important;
-  }
+        -webkit-appearance: none;
+        appearance: none;
+        -moz-outline: none !important;
+      }
 
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    margin: 0;
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        margin: 0;
 
-    -webkit-appearance: none;
-  }
+        -webkit-appearance: none;
+      }
 
-  input[type='number'] {
-    -moz-appearance: textfield;
-  }
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
 
-  :focus {
-    outline: 0;
-  }
+      :focus {
+        outline: 0;
+      }
 
-  :hover,
-  :active {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-touch-callout: none;
-  }
+      :hover,
+      :active {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-touch-callout: none;
+      }
 
-  ::-ms-clear {
-    display: none;
-  }
+      ::-ms-clear {
+        display: none;
+      }
 
-  /*-------------------
+      /*-------------------
     Global styles
 -------------------*/
-  :root {
-    --bg: #fff;
-    --sidebar_width: 296px;
-    --scroll_width: 17px;
-    --text_color: #000;
-    --font_size: 18px;
-    --font_size_title: 28px;
-    --font_family: 'Montserrat', 'Arial', sans-serif;
-  }
+      :root {
+        --bg: #fff;
+        --sidebar_width: 296px;
+        --scroll_width: 17px;
+        --text_color: #000;
+        --font_size: 18px;
+        --font_size_title: 28px;
+        --font_family: 'Montserrat', 'Arial', sans-serif;
+      }
 
-  ::selection {
-    color: #fff;
-    background: #f57e3b;
-  }
+      ::selection {
+        color: #fff;
+        background: #f57e3b;
+      }
 
-  ::-moz-selection {
-    color: #fff;
-    background: #f57e3b;
-  }
+      ::-moz-selection {
+        color: #fff;
+        background: #f57e3b;
+      }
 
-  .clear {
-    clear: both;
-  }
+      .clear {
+        clear: both;
+      }
 
-  .left {
-    float: left;
-  }
+      .left {
+        float: left;
+      }
 
-  .right {
-    float: right;
-  }
+      .right {
+        float: right;
+      }
 
-  html {
-    height: 100%;
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: fill-available;
-  }
+      html {
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height: fill-available;
+      }
 
-  html.custom_scroll ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+      html.custom_scroll ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
 
-    background-color: var(--bg);
-  }
+        background-color: var(--bg);
+      }
 
-  html.custom_scroll ::-webkit-scrollbar-thumb {
-    background-color: #f57e3b;
-  }
+      html.custom_scroll ::-webkit-scrollbar-thumb {
+        background-color: #f57e3b;
+      }
 
-  body {
-    font: var(--font_size) var(--font_family);
+      body {
+        font: var(--font_size) var(--font_family);
 
-    height: 100%;
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: fill-available;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height: fill-available;
 
-    color: var(--text_color);
+        color: var(--text_color);
 
-    background: transparent;
-  }
+        background: transparent;
+      }
 
-  body.menu_open {
-    overflow: hidden;
-  }
+      body.menu_open {
+        overflow: hidden;
+      }
 
-  button {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
+      button {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
 
-    display: inline-block;
+        display: inline-block;
 
-    cursor: pointer;
-    vertical-align: top;
+        cursor: pointer;
+        vertical-align: top;
 
-    color: inherit;
-    border: none;
-    background: none;
-  }
+        color: inherit;
+        border: none;
+        background: none;
+      }
 
-  .wrap {
-    position: relative;
-    z-index: 9;
+      .wrap {
+        position: relative;
+        z-index: 9;
 
-    display: flex;
-    overflow: clip;
-    flex-direction: column;
+        display: flex;
+        overflow: clip;
+        flex-direction: column;
 
-    min-width: 375px;
-    min-height: 100%;
-  }
+        min-width: 375px;
+        min-height: 100%;
+      }
 
-  .main {
-    display: flex;
-    justify-content: center;
-    flex: 1 0 auto;
-    flex-direction: column;
-  }
+      .main {
+        display: flex;
+        justify-content: center;
+        flex: 1 0 auto;
+        flex-direction: column;
+      }
 
-  .cont {
-    width: 100%;
-    max-width: 1248px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
+      .cont {
+        width: 100%;
+        max-width: 1248px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
 
-  .lazyload,
-  .swiper-lazy {
-    transition: opacity 0.5s linear;
+      .lazyload,
+      .swiper-lazy {
+        transition: opacity 0.5s linear;
 
-    opacity: 0;
-  }
+        opacity: 0;
+      }
 
-  .lazyload.loaded,
-  .swiper-lazy-loaded {
-    opacity: 1;
-  }
+      .lazyload.loaded,
+      .swiper-lazy-loaded {
+        opacity: 1;
+      }
 
-  .row {
-    display: flex;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+      .row {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
 
-  .content_flex.row,
-  .content_flex > .cont.row {
-    align-content: stretch;
-    align-items: stretch;
-    justify-content: center;
-  }
+      .content_flex.row,
+      .content_flex > .cont.row {
+        align-content: stretch;
+        align-items: stretch;
+        justify-content: center;
+      }
 
-  .content_flex .content {
-    position: relative;
+      .content_flex .content {
+        position: relative;
 
-    width: calc(100% - var(--sidebar_width) - 40px);
-  }
+        width: calc(100% - var(--sidebar_width) - 40px);
+      }
 
-  .content_flex .content > *:first-child {
-    margin-top: 0;
-  }
+      .content_flex .content > *:first-child {
+        margin-top: 0;
+      }
 
-  .content_flex .content > *:last-child {
-    margin-bottom: 0;
-  }
+      .content_flex .content > *:last-child {
+        margin-bottom: 0;
+      }
 
-  /*------------------
+      /*------------------
     Form elements
 ------------------*/
-  .form {
-    --form_border_color: #dcdcdc;
-    --form_focus_color: #38b218;
-    --form_error_color: red;
-    --form_border_radius: 8px;
-    --form_bg_color: #fff;
-    --form_placeholder_color: #666;
-  }
-
-  .form ::-webkit-input-placeholder {
-    color: var(--form_placeholder_color);
-  }
-
-  .form :-moz-placeholder {
-    color: var(--form_placeholder_color);
-  }
-
-  .form ::-moz-placeholder {
-    opacity: 1;
-    color: var(--form_placeholder_color);
-  }
-
-  .form :-ms-input-placeholder {
-    color: var(--form_placeholder_color);
-  }
-
-  .form .columns {
-    display: flex;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    margin-left: calc(var(--form_columns_offset) * -1);
-
-    --form_columns_offset: 14px;
-  }
-
-  .form .columns > * {
-    width: calc(50% - var(--form_columns_offset));
-    margin-left: var(--form_columns_offset);
-  }
-
-  .form .line {
-    margin-bottom: 12px;
-  }
-
-  .form .field .label {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 130%;
-
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    height: 64px;
-    padding: 0 16px;
-
-    transition: 0.2s linear;
-    pointer-events: none;
-
-    color: var(--form_placeholder_color);
-  }
-
-  .field_text {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 130%;
-
-    margin-top: 5px;
-
-    text-align: center;
-  }
-
-  .field_text.error {
-    color: #f2132e;
-  }
-
-  .form .field > .icon {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-
-    display: none;
-
-    width: 24px;
-    height: 24px;
-
-    transform: translateY(-50%);
-  }
-
-  .form .field .input:focus ~ .icon,
-  .form .field .input.active ~ .icon {
-    display: block;
-  }
-
-  .form .field .input:focus ~ .label,
-  .form .field .input.active ~ .label,
-  .form .field textarea:focus ~ .label,
-  .form .field textarea.active ~ .label,
-  .form .nice-select.open ~ .label,
-  .form .nice-select.selected ~ .label {
-    font-size: 14px;
-    font-weight: 400;
-
-    height: 33px;
-    padding-top: 9px;
-  }
-
-  .form .field {
-    position: relative;
-  }
-
-  .form .input {
-    font-family: var(--font_family);
-    font-size: 19px;
-    font-weight: 500;
-
-    display: block;
-
-    width: 100%;
-    height: 64px;
-    padding: 24px 15px 0;
-
-    transition: 0.2s linear;
-
-    color: #39363a;
-    border: 1px solid var(--form_border_color);
-    border-radius: var(--form_border_radius);
-    background: var(--form_bg_color);
-  }
-
-  .form .input:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
-  }
-
-  .form .input:disabled {
-    pointer-events: none;
-
-    border-color: #f0f0f0;
-    background: #f0f0f0;
-  }
-
-  .form textarea {
-    font-family: var(--font_family);
-    font-size: 19px;
-
-    display: block;
-
-    width: 100%;
-    height: 123px;
-    padding: 36px 15px 0;
-
-    resize: none;
-    transition: 0.2s linear;
-
-    color: #666;
-    border: 1px solid var(--form_border_color);
-    border-radius: var(--form_border_radius);
-    background: var(--form_bg_color);
-  }
-
-  .form textarea::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-
-  .form .input:focus,
-  .form textarea:focus {
-    border-color: var(--form_focus_color);
-  }
-
-  .form .input:focus::-webkit-input-placeholder,
-  .form textarea:focus::-webkit-input-placeholder {
-    color: transparent;
-  }
-
-  .form .input:focus:-moz-placeholder,
-  .form textarea:focus:-moz-placeholder {
-    color: transparent;
-  }
-
-  .form .input:focus::-moz-placeholder,
-  .form textarea:focus::-moz-placeholder {
-    opacity: 1;
-    color: transparent;
-  }
-
-  .form .input:focus:-ms-input-placeholder,
-  .form textarea:focus:-ms-input-placeholder {
-    color: transparent;
-  }
-
-  .form .file {
-    padding: 35px 0;
-  }
-
-  .form .file input {
-    display: none;
-  }
-
-  .form .file label {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 113%;
-
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 360px;
-    max-width: 100%;
-    height: 54px;
-    margin: 0 auto;
-    padding: 10px 20px;
-
-    cursor: pointer;
-    text-align: center;
-    text-align: center;
-
-    color: #053640;
-    border-radius: var(--form_border_radius);
-    background: var(--form_bg_color);
-  }
-
-  .form .file label .icon {
-    display: block;
-
-    width: 24px;
-    height: 24px;
-    margin-right: 14px;
-  }
-
-  .form .file label span {
-    display: block;
-    overflow: hidden;
-
-    max-width: calc(100% - 38px);
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+      .form {
+        --form_border_color: #dcdcdc;
+        --form_focus_color: #38b218;
+        --form_error_color: red;
+        --form_border_radius: 8px;
+        --form_bg_color: #fff;
+        --form_placeholder_color: #666;
+      }
+
+      .form ::-webkit-input-placeholder {
+        color: var(--form_placeholder_color);
+      }
+
+      .form :-moz-placeholder {
+        color: var(--form_placeholder_color);
+      }
+
+      .form ::-moz-placeholder {
+        opacity: 1;
+        color: var(--form_placeholder_color);
+      }
+
+      .form :-ms-input-placeholder {
+        color: var(--form_placeholder_color);
+      }
+
+      .form .columns {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        margin-left: calc(var(--form_columns_offset) * -1);
+
+        --form_columns_offset: 14px;
+      }
+
+      .form .columns > * {
+        width: calc(50% - var(--form_columns_offset));
+        margin-left: var(--form_columns_offset);
+      }
+
+      .form .line {
+        margin-bottom: 12px;
+      }
+
+      .form .field .label {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        height: 64px;
+        padding: 0 16px;
+
+        transition: 0.2s linear;
+        pointer-events: none;
+
+        color: var(--form_placeholder_color);
+      }
+
+      .field_text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 130%;
+
+        margin-top: 5px;
+
+        text-align: center;
+      }
+
+      .field_text.error {
+        color: #f2132e;
+      }
+
+      .form .field > .icon {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+
+        display: none;
+
+        width: 24px;
+        height: 24px;
+
+        transform: translateY(-50%);
+      }
+
+      .form .field .input:focus ~ .icon,
+      .form .field .input.active ~ .icon {
+        display: block;
+      }
+
+      .form .field .input:focus ~ .label,
+      .form .field .input.active ~ .label,
+      .form .field textarea:focus ~ .label,
+      .form .field textarea.active ~ .label,
+      .form .nice-select.open ~ .label,
+      .form .nice-select.selected ~ .label {
+        font-size: 14px;
+        font-weight: 400;
+
+        height: 33px;
+        padding-top: 9px;
+      }
+
+      .form .field {
+        position: relative;
+      }
+
+      .form .input {
+        font-family: var(--font_family);
+        font-size: 19px;
+        font-weight: 500;
+
+        display: block;
+
+        width: 100%;
+        height: 64px;
+        padding: 24px 15px 0;
+
+        transition: 0.2s linear;
+
+        color: #39363a;
+        border: 1px solid var(--form_border_color);
+        border-radius: var(--form_border_radius);
+        background: var(--form_bg_color);
+      }
+
+      .form .input:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
+      }
+
+      .form .input:disabled {
+        pointer-events: none;
+
+        border-color: #f0f0f0;
+        background: #f0f0f0;
+      }
+
+      .form textarea {
+        font-family: var(--font_family);
+        font-size: 19px;
+
+        display: block;
+
+        width: 100%;
+        height: 123px;
+        padding: 36px 15px 0;
+
+        resize: none;
+        transition: 0.2s linear;
+
+        color: #666;
+        border: 1px solid var(--form_border_color);
+        border-radius: var(--form_border_radius);
+        background: var(--form_bg_color);
+      }
+
+      .form textarea::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+
+      .form .input:focus,
+      .form textarea:focus {
+        border-color: var(--form_focus_color);
+      }
+
+      .form .input:focus::-webkit-input-placeholder,
+      .form textarea:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+
+      .form .input:focus:-moz-placeholder,
+      .form textarea:focus:-moz-placeholder {
+        color: transparent;
+      }
+
+      .form .input:focus::-moz-placeholder,
+      .form textarea:focus::-moz-placeholder {
+        opacity: 1;
+        color: transparent;
+      }
+
+      .form .input:focus:-ms-input-placeholder,
+      .form textarea:focus:-ms-input-placeholder {
+        color: transparent;
+      }
+
+      .form .file {
+        padding: 35px 0;
+      }
+
+      .form .file input {
+        display: none;
+      }
+
+      .form .file label {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 113%;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 360px;
+        max-width: 100%;
+        height: 54px;
+        margin: 0 auto;
+        padding: 10px 20px;
+
+        cursor: pointer;
+        text-align: center;
+        text-align: center;
+
+        color: #053640;
+        border-radius: var(--form_border_radius);
+        background: var(--form_bg_color);
+      }
+
+      .form .file label .icon {
+        display: block;
+
+        width: 24px;
+        height: 24px;
+        margin-right: 14px;
+      }
+
+      .form .file label span {
+        display: block;
+        overflow: hidden;
+
+        max-width: calc(100% - 38px);
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
 
-  .form .file .exp {
-    font-size: 12px;
-    line-height: 140%;
+      .form .file .exp {
+        font-size: 12px;
+        line-height: 140%;
 
-    width: 100%;
-    margin: 27px 0 0;
-    padding: 0;
+        width: 100%;
+        margin: 27px 0 0;
+        padding: 0;
 
-    text-align: left;
+        text-align: left;
 
-    color: #39363a;
-  }
+        color: #39363a;
+      }
 
-  .form select {
-    display: none;
-  }
+      .form select {
+        display: none;
+      }
 
-  .form .nice-select {
-    position: relative;
+      .form .nice-select {
+        position: relative;
 
-    display: block;
+        display: block;
 
-    cursor: pointer;
-  }
+        cursor: pointer;
+      }
 
-  .form .nice-select .current {
-    font-weight: 500;
-    line-height: 62px;
+      .form .nice-select .current {
+        font-weight: 500;
+        line-height: 62px;
 
-    position: relative;
+        position: relative;
 
-    display: block;
-    overflow: hidden;
+        display: block;
+        overflow: hidden;
 
-    height: 64px;
-    padding-right: 42px;
-    padding-left: 15px;
+        height: 64px;
+        padding-right: 42px;
+        padding-left: 15px;
 
-    cursor: pointer;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+        cursor: pointer;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
-    color: #39363a;
-    border: 1px solid var(--form_border_color);
-    border-radius: var(--form_border_radius);
-    background: var(--form_bg_color);
-  }
+        color: #39363a;
+        border: 1px solid var(--form_border_color);
+        border-radius: var(--form_border_radius);
+        background: var(--form_bg_color);
+      }
 
-  .form .nice-select.open .current {
-    border-color: var(--form_focus_color);
-  }
+      .form .nice-select.open .current {
+        border-color: var(--form_focus_color);
+      }
 
-  .form .nice-select-dropdown {
-    position: absolute;
-    z-index: 9;
-    top: 100%;
-    right: 0;
+      .form .nice-select-dropdown {
+        position: absolute;
+        z-index: 9;
+        top: 100%;
+        right: 0;
 
-    visibility: hidden;
-    overflow: hidden;
+        visibility: hidden;
+        overflow: hidden;
 
-    min-width: 100%;
-    margin-top: 1px;
-    padding: 4px;
+        min-width: 100%;
+        margin-top: 1px;
+        padding: 4px;
 
-    transition: 0.2s linear;
+        transition: 0.2s linear;
 
-    opacity: 0;
-    border: 1px solid var(--form_border_color);
-    border-radius: var(--form_border_radius);
-    background: var(--form_bg_color);
-  }
+        opacity: 0;
+        border: 1px solid var(--form_border_color);
+        border-radius: var(--form_border_radius);
+        background: var(--form_bg_color);
+      }
 
-  .form .nice-select.open .nice-select-dropdown {
-    visibility: visible;
+      .form .nice-select.open .nice-select-dropdown {
+        visibility: visible;
 
-    opacity: 1;
-  }
+        opacity: 1;
+      }
 
-  .form .nice-select .list {
-    overflow: auto;
+      .form .nice-select .list {
+        overflow: auto;
 
-    max-height: 240px;
-  }
+        max-height: 240px;
+      }
 
-  .form .nice-select .list::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+      .form .nice-select .list::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
 
-    border-radius: 5px;
-  }
+        border-radius: 5px;
+      }
 
-  .form .nice-select .list::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-  }
+      .form .nice-select .list::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+      }
 
-  .form .nice-select .list .option {
-    display: block;
+      .form .nice-select .list .option {
+        display: block;
 
-    padding: 8px 15px;
+        padding: 8px 15px;
 
-    list-style-type: none;
+        list-style-type: none;
 
-    cursor: pointer;
+        cursor: pointer;
 
-    color: #39363a;
-  }
+        color: #39363a;
+      }
 
-  .form .nice-select .list .option:empty {
-    display: none;
-  }
+      .form .nice-select .list .option:empty {
+        display: none;
+      }
 
-  .form .nice-select + .arr {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    right: 16px;
-    bottom: 0;
+      .form .nice-select + .arr {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 16px;
+        bottom: 0;
 
-    display: block;
+        display: block;
 
-    width: 24px;
-    height: 24px;
-    margin: auto;
+        width: 24px;
+        height: 24px;
+        margin: auto;
 
-    transition: transform 0.2s linear;
-    pointer-events: none;
+        transition: transform 0.2s linear;
+        pointer-events: none;
 
-    color: #bebebe;
-  }
+        color: #bebebe;
+      }
 
-  .form .nice-select.open + .arr {
-    transform: rotate(180deg);
-  }
+      .form .nice-select.open + .arr {
+        transform: rotate(180deg);
+      }
 
-  .form .sticker {
-    font-size: 14px;
-    line-height: 22px;
+      .form .sticker {
+        font-size: 14px;
+        line-height: 22px;
 
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    right: 16px;
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        right: 16px;
 
-    width: 68px;
+        width: 68px;
 
-    transform: translateY(-50%);
-    text-align: center;
-    pointer-events: none;
+        transform: translateY(-50%);
+        text-align: center;
+        pointer-events: none;
 
-    color: #fff;
-    border-radius: 54px;
-    background: #38b218;
-  }
+        color: #fff;
+        border-radius: 54px;
+        background: #38b218;
+      }
 
-  .form .error {
-    border-color: var(--form_error_color) !important;
-  }
+      .form .error {
+        border-color: var(--form_error_color) !important;
+      }
 
-  .form .exp {
-    font-size: 12px;
-    line-height: 130%;
+      .form .exp {
+        font-size: 12px;
+        line-height: 130%;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
-    min-height: 35px;
-    margin-top: 7px;
+        min-height: 35px;
+        margin-top: 7px;
 
-    text-align: center;
+        text-align: center;
 
-    color: #666;
-  }
+        color: #666;
+      }
 
-  .form .checkbox {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 140%;
+      .form .checkbox {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 140%;
 
-    position: relative;
+        position: relative;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
-    min-height: 40px;
-    padding-left: 56px;
+        min-height: 40px;
+        padding-left: 56px;
 
-    cursor: pointer;
-    text-align: left;
+        cursor: pointer;
+        text-align: left;
 
-    color: #39363a;
-  }
+        color: #39363a;
+      }
 
-  .form .checkbox.agree_all {
-    padding-right: 40px;
-  }
+      .form .checkbox.agree_all {
+        padding-right: 40px;
+      }
 
-  .form .checkbox > * {
-    pointer-events: none;
-  }
+      .form .checkbox > * {
+        pointer-events: none;
+      }
 
-  .form .checkbox input {
-    display: none;
-  }
+      .form .checkbox input {
+        display: none;
+      }
 
-  .form .checkbox .check {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+      .form .checkbox .check {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
-    width: 40px;
-    height: 40px;
-    margin: auto 0;
+        width: 40px;
+        height: 40px;
+        margin: auto 0;
 
-    transition: 0.2s linear;
+        transition: 0.2s linear;
 
-    color: #fff;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    background: #fff;
-  }
+        color: #fff;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        background: #fff;
+      }
 
-  .form .checkbox .check .icon {
-    display: block;
+      .form .checkbox .check .icon {
+        display: block;
 
-    width: 24px;
-    height: 24px;
+        width: 24px;
+        height: 24px;
 
-    transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
 
-    opacity: 0;
-  }
+        opacity: 0;
+      }
 
-  .form .checkbox .spoler_btn {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    bottom: 0;
+      .form .checkbox .spoler_btn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
-    width: 24px;
-    height: 24px;
-    margin: auto 0;
-    padding: 0 !important;
+        width: 24px;
+        height: 24px;
+        margin: auto 0;
+        padding: 0 !important;
 
-    pointer-events: auto;
-  }
+        pointer-events: auto;
+      }
 
-  .form .checkbox .spoler_btn .icon {
-    display: block;
+      .form .checkbox .spoler_btn .icon {
+        display: block;
 
-    width: 100%;
-    height: 100%;
+        width: 100%;
+        height: 100%;
 
-    transition: transform 0.2s linear;
-  }
+        transition: transform 0.2s linear;
+      }
 
-  .form .checkbox .spoler_btn.active .icon {
-    transform: rotate(180deg);
-  }
+      .form .checkbox .spoler_btn.active .icon {
+        transform: rotate(180deg);
+      }
 
-  .form .checkbox input:checked ~ .check {
-    border-color: #38b218;
-    background: #38b218;
-  }
+      .form .checkbox input:checked ~ .check {
+        border-color: #38b218;
+        background: #38b218;
+      }
 
-  .form .checkbox input:checked ~ .check .icon {
-    opacity: 1;
-  }
+      .form .checkbox input:checked ~ .check .icon {
+        opacity: 1;
+      }
 
-  .form .toggle_checkbox {
-    font-weight: 500;
-    line-height: 130%;
+      .form .toggle_checkbox {
+        font-weight: 500;
+        line-height: 130%;
 
-    position: relative;
+        position: relative;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
-    min-height: 64px;
-    padding: 16px 78px 16px 16px;
+        min-height: 64px;
+        padding: 16px 78px 16px 16px;
 
-    cursor: pointer;
+        cursor: pointer;
 
-    color: #39363a;
-  }
+        color: #39363a;
+      }
 
-  .form .toggle_checkbox input {
-    display: none;
-  }
+      .form .toggle_checkbox input {
+        display: none;
+      }
 
-  .form .toggle_checkbox .check {
-    position: absolute;
-    top: 0;
-    right: 16px;
-    bottom: 0;
+      .form .toggle_checkbox .check {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        bottom: 0;
 
-    width: 52px;
-    height: 32px;
-    margin: auto 0;
+        width: 52px;
+        height: 32px;
+        margin: auto 0;
 
-    transition: background 0.2s linear;
+        transition: background 0.2s linear;
 
-    border-radius: 100px;
-    background: rgba(29, 27, 32, 0.12);
-  }
+        border-radius: 100px;
+        background: rgba(29, 27, 32, 0.12);
+      }
 
-  .form .toggle_checkbox .check:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 4px;
+      .form .toggle_checkbox .check:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 4px;
 
-    display: block;
+        display: block;
 
-    width: 24px;
-    height: 24px;
-    margin: auto 0;
+        width: 24px;
+        height: 24px;
+        margin: auto 0;
 
-    content: '';
-    transition: left 0.2s linear;
+        content: '';
+        transition: left 0.2s linear;
 
-    border-radius: 50%;
-    background: #fff;
-  }
+        border-radius: 50%;
+        background: #fff;
+      }
 
-  .form .toggle_checkbox input:checked + .check {
-    background: #38b218;
-  }
+      .form .toggle_checkbox input:checked + .check {
+        background: #38b218;
+      }
 
-  .form .toggle_checkbox input:checked + .check:before {
-    left: 24px;
-  }
+      .form .toggle_checkbox input:checked + .check:before {
+        left: 24px;
+      }
 
-  .form .agree {
-    width: 984px;
-    max-width: 100%;
-    margin-top: 7px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
+      .form .agree {
+        width: 984px;
+        max-width: 100%;
+        margin-top: 7px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
 
-    border-radius: 8px;
-    background: #fff;
-  }
+        border-radius: 8px;
+        background: #fff;
+      }
 
-  .form .agree .sub {
-    display: none;
+      .form .agree .sub {
+        display: none;
 
-    margin-top: 16px;
-  }
+        margin-top: 16px;
+      }
 
-  .form .agree .sub > * {
-    padding-left: 22px;
+      .form .agree .sub > * {
+        padding-left: 22px;
 
-    border-left: 4px solid #45b726;
-  }
+        border-left: 4px solid #45b726;
+      }
 
-  .form .agree .sub > * + * {
-    margin-top: 16px;
-  }
+      .form .agree .sub > * + * {
+        margin-top: 16px;
+      }
 
-  .form .submit {
-    padding-top: 13px;
-  }
+      .form .submit {
+        padding-top: 13px;
+      }
 
-  .form .submit_btn {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 100%;
+      .form .submit_btn {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 100%;
 
-    display: block;
+        display: block;
 
-    width: 100%;
-    max-width: 100%;
-    height: 64px;
-    margin: 30px auto 0 auto;
+        width: 100%;
+        max-width: 100%;
+        height: 64px;
+        margin: 30px auto 0 auto;
 
-    color: #ffffff;
-    border-radius: 8px;
-    background: #f57e3b;
+        color: #ffffff;
+        border-radius: 8px;
+        background: #f57e3b;
 
-    border: 1px solid #f57e3b;
+        border: 1px solid #f57e3b;
 
-    transition:
-      color 0.2s linear,
-      background 0.2s linear;
-  }
+        transition:
+          color 0.2s linear,
+          background 0.2s linear;
+      }
 
-  @media (any-hover: hover) {
-    .form .submit_btn:hover,
-    .form .submit_btn:focus {
-      color: #f57e3b;
-      background: #ffffff;
-    }
-  }
+      @media (any-hover: hover) {
+        .form .submit_btn:hover,
+        .form .submit_btn:focus {
+          color: #f57e3b;
+          background: #ffffff;
+        }
+      }
 
-  @media (any-hover: none) {
-    .form .submit_btn:active {
-      color: #f57e3b;
-      background: #ffffff;
-    }
-  }
+      @media (any-hover: none) {
+        .form .submit_btn:active {
+          color: #f57e3b;
+          background: #ffffff;
+        }
+      }
 
-  /*--------
+      /*--------
   binding
 --------*/
-  .binding {
-    position: relative;
-    z-index: 3;
-  }
+      .binding {
+        position: relative;
+        z-index: 3;
+      }
 
-  .binding__error {
-    padding: 20px 0 0 0;
+      .binding__error {
+        padding: 20px 0 0 0;
 
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: #f2132e;
-  }
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: #f2132e;
+      }
 
-  .binding .bg {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
+      .binding .bg {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
 
-    display: block;
+        display: block;
 
-    width: 938px;
-    height: 272px;
+        width: 938px;
+        height: 272px;
 
-    content: '';
-    pointer-events: none;
-  }
+        content: '';
+        pointer-events: none;
+      }
 
-  .binding .cont {
-    position: relative;
-    z-index: 3;
-  }
+      .binding .cont {
+        position: relative;
+        z-index: 3;
+      }
 
-  .binding__logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
+      .binding__logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
 
-  /*----------------
+      /*----------------
     binding - Cards
 ----------------*/
 
-  .binding .cards .add {
-    width: 660px;
-    max-width: 100%;
-    margin: 0 auto;
+      .binding .cards .add {
+        width: 660px;
+        max-width: 100%;
+        margin: 0 auto;
 
-    border-radius: 8px;
-    background: #f4f4f4;
-    box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.12);
-  }
+        border-radius: 8px;
+        background: #f4f4f4;
+        box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.12);
+      }
 
-  .binding .cards .add .head {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      .binding .cards .add .head {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-    padding: 43px 47px 42px;
+        padding: 43px 47px 42px;
 
-    border-radius: 24px 24px 0 0;
-    background: #fff;
-  }
+        border-radius: 24px 24px 0 0;
+        background: #fff;
+      }
 
-  .binding .cards .add .secure_3d img {
-    display: block;
-  }
+      .binding .cards .add .secure_3d img {
+        display: block;
+      }
 
-  .binding .cards .add .logos {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+      .binding .cards .add .logos {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
-    margin-left: auto;
-  }
+        margin-left: auto;
+      }
 
-  .binding .cards .add .logos > * + * {
-    margin-left: 14px;
-  }
+      .binding .cards .add .logos > * + * {
+        margin-left: 14px;
+      }
 
-  .binding .cards .add .logos img {
-    display: block;
-  }
+      .binding .cards .add .logos img {
+        display: block;
+      }
 
-  .binding .cards .add .form {
-    padding: 35px 24px;
-  }
+      .binding .cards .add .form {
+        padding: 35px 24px;
+      }
 
-  .binding .cards .add .form .line {
-    margin-bottom: 16px;
-  }
+      .binding .cards .add .form .line {
+        margin-bottom: 16px;
+      }
 
-  .binding .cards .add .form .date {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+      .binding .cards .add .form .date {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
-    margin-bottom: 0;
-  }
+        margin-bottom: 0;
+      }
 
-  .binding .cards .add .form .date .sep {
-    font-size: 34px;
-    font-weight: 600;
-    line-height: 100%;
+      .binding .cards .add .form .date .sep {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 100%;
 
-    width: 38px;
+        width: 38px;
 
-    text-align: center;
+        text-align: center;
 
-    color: #707070;
-  }
+        color: #707070;
+      }
 
-  .binding .cards .add .form .date .field {
-    width: 100px;
-  }
+      .binding .cards .add .form .date .field {
+        width: 100px;
+      }
 
-  .binding .cards .add .form .date .input {
-    font-size: 20px;
-    font-weight: 600;
+      .binding .cards .add .form .date .input {
+        font-size: 20px;
+        font-weight: 600;
 
-    height: 70px;
+        height: 70px;
 
-    text-align: center;
-  }
+        text-align: center;
+      }
 
-  .binding .cards .add .form .date .label {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 100%;
+      .binding .cards .add .form .date .label {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 100%;
 
-    justify-content: center;
+        justify-content: center;
 
-    width: 100%;
-    height: 70px;
+        width: 100%;
+        height: 70px;
 
-    text-align: center;
+        text-align: center;
 
-    color: #707070;
-  }
+        color: #707070;
+      }
 
-  .binding .cards .add .form .date .input:focus ~ .label,
-  .binding .cards .add .form .date .input.active ~ .label {
-    font-size: 14px;
-    font-weight: 400;
+      .binding .cards .add .form .date .input:focus ~ .label,
+      .binding .cards .add .form .date .input.active ~ .label {
+        font-size: 14px;
+        font-weight: 400;
 
-    height: 33px;
-    padding-top: 9px;
-  }
+        height: 33px;
+        padding-top: 9px;
+      }
 
-  .binding .cards .add .form .cvv {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+      .binding .cards .add .form .cvv {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
-    margin-bottom: 0;
-    margin-left: auto;
-  }
+        margin-bottom: 0;
+        margin-left: auto;
+      }
 
-  .binding .cards .add .form .cvv .exp {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 130%;
+      .binding .cards .add .form .cvv .exp {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 130%;
 
-    min-height: 0;
-    margin-top: 0;
-    margin-right: 18px;
+        min-height: 0;
+        margin-top: 0;
+        margin-right: 18px;
 
-    text-align: left;
+        text-align: left;
 
-    color: #707070;
-  }
+        color: #707070;
+      }
 
-  .binding .cards .add .form .cvv .field {
-    width: 190px;
-  }
+      .binding .cards .add .form .cvv .field {
+        width: 190px;
+      }
 
-  .binding .cards .add .form .cvv .input {
-    font-size: 20px;
-    font-weight: 600;
+      .binding .cards .add .form .cvv .input {
+        font-size: 20px;
+        font-weight: 600;
 
-    height: 70px;
+        height: 70px;
 
-    text-align: center;
-  }
+        text-align: center;
+      }
 
-  .binding .cards .add .form .cvv .label {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 100%;
+      .binding .cards .add .form .cvv .label {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 100%;
 
-    justify-content: center;
+        justify-content: center;
 
-    width: 100%;
-    height: 70px;
+        width: 100%;
+        height: 70px;
 
-    text-align: center;
+        text-align: center;
 
-    color: #707070;
-  }
+        color: #707070;
+      }
 
-  .binding .cards .add .form .cvv .input:focus ~ .label,
-  .binding .cards .add .form .cvv .input.active ~ .label {
-    font-size: 14px;
-    font-weight: 400;
+      .binding .cards .add .form .cvv .input:focus ~ .label,
+      .binding .cards .add .form .cvv .input.active ~ .label {
+        font-size: 14px;
+        font-weight: 400;
 
-    height: 33px;
-    padding-top: 9px;
-  }
+        height: 33px;
+        padding-top: 9px;
+      }
 
-  @media print, (max-width: 1247px) {
-    /*-------------------
+      @media print, (max-width: 1247px) {
+        /*-------------------
         Global styles
     -------------------*/
-    :root {
-      --font_size: 16px;
-      --font_size_title: 26px;
-      --sidebar_width: 240px;
-    }
+        :root {
+          --font_size: 16px;
+          --font_size_title: 26px;
+          --sidebar_width: 240px;
+        }
 
-    html.custom_scroll ::-webkit-scrollbar {
-      width: 5px;
-      height: 5px;
-    }
+        html.custom_scroll ::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+        }
 
-    /*----------------
+        /*----------------
         binding - Cards
     ----------------*/
 
-    .binding .cards .add {
-      width: 560px;
-    }
+        .binding .cards .add {
+          width: 560px;
+        }
 
-    .binding .cards .add .head {
-      padding: 32px;
-    }
+        .binding .cards .add .head {
+          padding: 32px;
+        }
 
-    .binding .cards .add .secure_3d img {
-      height: 56px;
-    }
+        .binding .cards .add .secure_3d img {
+          height: 56px;
+        }
 
-    .binding .cards .add .logos > * + * {
-      margin-left: 10px;
-    }
+        .binding .cards .add .logos > * + * {
+          margin-left: 10px;
+        }
 
-    .binding .cards .add .logos img {
-      height: 40px;
-    }
+        .binding .cards .add .logos img {
+          height: 40px;
+        }
 
-    .binding .cards .add .form {
-      padding: 35px 24px;
-    }
+        .binding .cards .add .form {
+          padding: 35px 24px;
+        }
 
-    .binding .cards .add .form .date {
-      margin-bottom: 0;
-    }
+        .binding .cards .add .form .date {
+          margin-bottom: 0;
+        }
 
-    .binding .cards .add .form .date .sep {
-      font-size: 24px;
+        .binding .cards .add .form .date .sep {
+          font-size: 24px;
 
-      width: 32px;
-    }
+          width: 32px;
+        }
 
-    .binding .cards .add .form .date .field {
-      width: 92px;
-    }
+        .binding .cards .add .form .date .field {
+          width: 92px;
+        }
 
-    .binding .cards .add .form .date .input,
-    .binding .cards .add .form .date .label {
-      font-size: 16px;
+        .binding .cards .add .form .date .input,
+        .binding .cards .add .form .date .label {
+          font-size: 16px;
 
-      height: 64px;
-    }
+          height: 64px;
+        }
 
-    .binding .cards .add .form .cvv {
-      margin-bottom: 0;
-    }
+        .binding .cards .add .form .cvv {
+          margin-bottom: 0;
+        }
 
-    .binding .cards .add .form .cvv .exp {
-      font-size: 12px;
+        .binding .cards .add .form .cvv .exp {
+          font-size: 12px;
 
-      margin-right: 16px;
-    }
+          margin-right: 16px;
+        }
 
-    .binding .cards .add .form .cvv .field {
-      width: 160px;
-    }
+        .binding .cards .add .form .cvv .field {
+          width: 160px;
+        }
 
-    .binding .cards .add .form .cvv .input,
-    .binding .cards .add .form .cvv .label {
-      font-size: 16px;
+        .binding .cards .add .form .cvv .input,
+        .binding .cards .add .form .cvv .label {
+          font-size: 16px;
 
-      height: 64px;
-    }
-  }
+          height: 64px;
+        }
+      }
 
-  @media print, (max-width: 1023px) {
-    /*-------------------
+      @media print, (max-width: 1023px) {
+        /*-------------------
         Global styles
     -------------------*/
-    :root {
-      --sidebar_width: 100%;
-    }
+        :root {
+          --sidebar_width: 100%;
+        }
 
-    .content_flex .content {
-      width: 100%;
-    }
+        .content_flex .content {
+          width: 100%;
+        }
 
-    /*----------------
+        /*----------------
         binding - Cards
     ----------------*/
-  }
+      }
 
-  @media print, (max-width: 767px) {
-    /*-------------------
+      @media print, (max-width: 767px) {
+        /*-------------------
         Global styles
     -------------------*/
-    :root {
-      --bg: #f2f2f2;
-      --font_size: 15px;
-      --font_size_title: 22px;
-    }
+        :root {
+          --bg: #f2f2f2;
+          --font_size: 15px;
+          --font_size_title: 22px;
+        }
 
-    .cont {
-      padding: 0 20px;
-    }
+        .cont {
+          padding: 0 20px;
+        }
 
-    /*--------
+        /*--------
         binding
     --------*/
-    .binding {
-      padding: 40px 0;
-    }
+        .binding {
+          padding: 40px 0;
+        }
 
-    .binding .bg {
-      top: -148px;
-    }
+        .binding .bg {
+          top: -148px;
+        }
 
-    /*----------------
+        /*----------------
         binding - Cards
     ----------------*/
-    .binding .cards .add {
-      width: 432px;
-    }
+        .binding .cards .add {
+          width: 432px;
+        }
 
-    .binding .cards .add .head {
-      padding: 20px;
-    }
+        .binding .cards .add .head {
+          padding: 20px;
+        }
 
-    .binding .cards .add .secure_3d img {
-      height: 48px;
-    }
+        .binding .cards .add .secure_3d img {
+          height: 48px;
+        }
 
-    .binding .cards .add .logos > * + * {
-      margin-left: 8px;
-    }
+        .binding .cards .add .logos > * + * {
+          margin-left: 8px;
+        }
 
-    .binding .cards .add .logos img {
-      height: 32px;
-    }
+        .binding .cards .add .logos img {
+          height: 32px;
+        }
 
-    .binding .cards .add .form {
-      padding: 35px 24px;
-    }
+        .binding .cards .add .form {
+          padding: 35px 24px;
+        }
 
-    .binding .cards .add .form .date {
-      margin-bottom: 0;
-    }
+        .binding .cards .add .form .date {
+          margin-bottom: 0;
+        }
 
-    .binding .cards .add .form .date .sep {
-      font-size: 20px;
+        .binding .cards .add .form .date .sep {
+          font-size: 20px;
 
-      width: 28px;
-    }
+          width: 28px;
+        }
 
-    .binding .cards .add .form .date .field {
-      width: 80px;
-    }
+        .binding .cards .add .form .date .field {
+          width: 80px;
+        }
 
-    .binding .cards .add .form .date .input,
-    .binding .cards .add .form .date .label {
-      font-size: 16px;
+        .binding .cards .add .form .date .input,
+        .binding .cards .add .form .date .label {
+          font-size: 16px;
 
-      height: 60px;
-    }
+          height: 60px;
+        }
 
-    .binding .cards .add .form .cvv {
-      flex-direction: column;
+        .binding .cards .add .form .cvv {
+          flex-direction: column;
 
-      margin-bottom: 0;
-    }
+          margin-bottom: 0;
+        }
 
-    .binding .cards .add .form .cvv .exp {
-      display: block;
-      justify-content: flex-start;
-      order: 2;
+        .binding .cards .add .form .cvv .exp {
+          display: block;
+          justify-content: flex-start;
+          order: 2;
 
-      width: 100%;
-      margin-top: 8px;
-      margin-right: 0;
+          width: 100%;
+          margin-top: 8px;
+          margin-right: 0;
 
-      text-align: left;
-    }
+          text-align: left;
+        }
 
-    .binding .cards .add .form .cvv .input,
-    .binding .cards .add .form .cvv .label {
-      font-size: 16px;
+        .binding .cards .add .form .cvv .input,
+        .binding .cards .add .form .cvv .label {
+          font-size: 16px;
 
-      height: 60px;
-    }
+          height: 60px;
+        }
 
-    .form .submit_btn {
-      margin: 20px 0 0 0;
-    }
-  }
+        .form .submit_btn {
+          margin: 20px 0 0 0;
+        }
+      }
 
-  @media (max-width: 479px) {
-    /*-------------------
+      @media (max-width: 479px) {
+        /*-------------------
         Global styles
     -------------------*/
-    :root {
-      --font_size: 14px;
-      --font_size_title: 18px;
-    }
+        :root {
+          --font_size: 14px;
+          --font_size_title: 18px;
+        }
 
-    .cont {
-      padding: 0 10px;
-    }
+        .cont {
+          padding: 0 10px;
+        }
 
-    /*----------------
+        /*----------------
         binding
     ----------------*/
-    .binding {
-      padding: 30px 0;
-    }
+        .binding {
+          padding: 30px 0;
+        }
 
-    .binding__error {
-      padding: 15px 0 0 0;
+        .binding__error {
+          padding: 15px 0 0 0;
 
-      font-size: 18px;
-    }
+          font-size: 18px;
+        }
 
-    /*----------------
+        /*----------------
         binding - Cards
     ----------------*/
-    .binding .cards .add .head {
-      padding: 24px;
-    }
+        .binding .cards .add .head {
+          padding: 24px;
+        }
 
-    .binding .cards .add .secure_3d img {
-      height: 40px;
-    }
+        .binding .cards .add .secure_3d img {
+          height: 40px;
+        }
 
-    .binding .cards .add .logos > * + * {
-      margin-left: 6px;
-    }
+        .binding .cards .add .logos > * + * {
+          margin-left: 6px;
+        }
 
-    .binding .cards .add .logos img {
-      height: 28px;
-    }
+        .binding .cards .add .logos img {
+          height: 28px;
+        }
 
-    .binding .cards .add .form {
-      padding: 20px 15px;
-    }
+        .binding .cards .add .form {
+          padding: 20px 15px;
+        }
 
-    .binding .cards .add .form .line {
-      margin-bottom: 12px;
-    }
+        .binding .cards .add .form .line {
+          margin-bottom: 12px;
+        }
 
-    .binding .cards .add .form .line .input {
-      height: 54px;
-      padding-top: 20px;
-    }
+        .binding .cards .add .form .line .input {
+          height: 54px;
+          padding-top: 20px;
+        }
 
-    .binding .cards .add .form .field .label {
-      height: 54px;
-    }
+        .binding .cards .add .form .field .label {
+          height: 54px;
+        }
 
-    .binding .cards .add .form .field .input:focus ~ .label,
-    .binding .cards .add .form .field .input.active ~ .label {
-      height: 30px;
-      padding-top: 4px;
-    }
+        .binding .cards .add .form .field .input:focus ~ .label,
+        .binding .cards .add .form .field .input.active ~ .label {
+          height: 30px;
+          padding-top: 4px;
+        }
 
-    .binding .cards .add .form .date {
-      margin-bottom: 0;
-    }
+        .binding .cards .add .form .date {
+          margin-bottom: 0;
+        }
 
-    .binding .cards .add .form .date .sep {
-      font-size: 16px;
+        .binding .cards .add .form .date .sep {
+          font-size: 16px;
 
-      width: 24px;
-    }
+          width: 24px;
+        }
 
-    .binding .cards .add .form .date .field {
-      width: 64px;
-    }
+        .binding .cards .add .form .date .field {
+          width: 64px;
+        }
 
-    .binding .cards .add .form .date .input,
-    .binding .cards .add .form .date .label {
-      height: 54px;
-    }
+        .binding .cards .add .form .date .input,
+        .binding .cards .add .form .date .label {
+          height: 54px;
+        }
 
-    .binding .cards .add .form .cvv {
-      margin-bottom: 0;
-    }
+        .binding .cards .add .form .cvv {
+          margin-bottom: 0;
+        }
 
-    .binding .cards .add .form .cvv .input,
-    .binding .cards .add .form .cvv .label {
-      height: 54px;
-    }
+        .binding .cards .add .form .cvv .input,
+        .binding .cards .add .form .cvv .label {
+          height: 54px;
+        }
 
-    .repeat {
-      margin: 24px auto;
-    }
+        .repeat {
+          margin: 24px auto;
+        }
 
-    .block_head .title .mob_hide {
-      display: none;
-    }
-  }</style></head><body><div class="wrap"><div class="main"><section class="binding content_flex"><div class="cont row"><section class="content"><div class="cards"><div class="add"><form class="form" action="${ACTION}" method="post"><input name="${CARDHOLDER}" type="hidden" value="CARDHOLDER NAME"><div class="line"><div class="field"><input tabindex="1" id="card-number" class="input" name="${CARDNO}" type="tel"><div class="label">Номер карты</div></div></div><div class="row"><div class="line date"><div class="field"><input tabindex="2" id="month" class="input" name="${EXPMONTH}" type="tel" autocomplete="off"><div class="label">ММ</div></div><div class="sep">/</div><div class="field"><input tabindex="3" id="year" class="input" name="${EXPYEAR}" type="tel" autocomplete="off"><div class="label">ГГ</div></div></div><div class="line cvv"><div class="exp">Три цифры<br>с оборотной<br>стороны</div><div class="field"><input tabindex="4" id="cvv" class="input" name="${CVV2}" type="password"><div class="label">CVC</div></div></div></div>$!{INTERNAL_SECTION} #if($!card_error)<div class="binding__error">$!card_error</div>#end <button class="submit_btn" type="submit" onclick="return isFormValid()">Привязать карту</button></form></div></div></section></div></section></div></div><script>// Перемещает фокус к предыдущему input[tabindex] если input пуст
-  const tabindexInputs = document.querySelectorAll('input[tabindex]');
-  tabindexInputs.forEach((input) => {
-    input.addEventListener('keydown', (event) => {
-      const code = event.key;
-      const target = event.target;
-      if (code !== 'Backspace' || !!target.value.trim()) return;
-
-      const prevTabindex = target.getAttribute('tabindex') - 1;
-      const prevInputForFocus = document.querySelector(
-        `input[tabindex='${prevTabindex}']`,
-      );
-
-      if (prevInputForFocus) prevInputForFocus.focus();
-    });
-  });
-
-  // Добавляет/удаляет класс: active для всех input
-  // Удаляет класс: error при вводе для всех input
-  const inputs = document.querySelectorAll('input');
-  inputs.forEach((input) => {
-    input.addEventListener('input', ({ target }) => {
-      if (target.value.trim()) {
-        target.classList.add('active');
-        target.classList.remove('error');
-      } else {
-        target.classList.remove('active');
+        .block_head .title .mob_hide {
+          display: none;
+        }
       }
-    });
-  });
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="main">
+        <section class="binding content_flex">
+          <div class="cont row">
+            <section class="content">
+              <div class="cards">
+                <div class="add">
+                  <form class="form" action="${ACTION}" method="post">
+                    <input
+                      name="${CARDHOLDER}"
+                      type="hidden"
+                      value="CARDHOLDER NAME" />
+                    <div class="line">
+                      <div class="field">
+                        <input
+                          tabindex="1"
+                          id="card-number"
+                          class="input"
+                          name="${CARDNO}"
+                          type="tel" />
+                        <div class="label">Номер карты</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="line date">
+                        <div class="field">
+                          <input
+                            tabindex="2"
+                            id="month"
+                            class="input"
+                            name="${EXPMONTH}"
+                            type="tel"
+                            autocomplete="off" />
+                          <div class="label">ММ</div>
+                        </div>
+                        <div class="sep">/</div>
+                        <div class="field">
+                          <input
+                            tabindex="3"
+                            id="year"
+                            class="input"
+                            name="${EXPYEAR}"
+                            type="tel"
+                            autocomplete="off" />
+                          <div class="label">ГГ</div>
+                        </div>
+                      </div>
+                      <div class="line cvv">
+                        <div class="exp">
+                          Три цифры<br />с оборотной<br />стороны
+                        </div>
+                        <div class="field">
+                          <input
+                            tabindex="4"
+                            id="cvv"
+                            class="input"
+                            name="${CVV2}"
+                            type="password" />
+                          <div class="label">CVC</div>
+                        </div>
+                      </div>
+                    </div>
+                    $!{INTERNAL_SECTION} #if($!card_error)
+                    <div class="binding__error">$!card_error</div>
+                    #end
+                    <button
+                      class="submit_btn"
+                      type="submit"
+                      onclick="return isFormValid()">
+                      Привязать карту
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      // Перемещает фокус к предыдущему input[tabindex] если input пуст
+      const tabindexInputs = document.querySelectorAll('input[tabindex]');
+      tabindexInputs.forEach((input) => {
+        input.addEventListener('keydown', (event) => {
+          const code = event.key;
+          const target = event.target;
+          if (code !== 'Backspace' || !!target.value.trim()) return;
 
-  // Валидация даты
-  const monthInput = document.querySelector('#month');
-  const yearInput = document.querySelector('#year');
+          const prevTabindex = target.getAttribute('tabindex') - 1;
+          const prevInputForFocus = document.querySelector(
+            `input[tabindex='${prevTabindex}']`,
+          );
 
-  monthInput?.addEventListener('input', (event) => {
-    const target = event.target;
-    let value = target.value.trim();
+          if (prevInputForFocus) prevInputForFocus.focus();
+        });
+      });
 
-    // если вводиться не число
-    if (isNaN(event.data) || value === '') {
-      target.value = value = value.slice(0, value.length - 1);
-    }
+      // Добавляет/удаляет класс: active для всех input
+      // Удаляет класс: error при вводе для всех input
+      const inputs = document.querySelectorAll('input');
+      inputs.forEach((input) => {
+        input.addEventListener('input', ({ target }) => {
+          if (target.value.trim()) {
+            target.classList.add('active');
+            target.classList.remove('error');
+          } else {
+            target.classList.remove('active');
+          }
+        });
+      });
 
-    // если дина больше 2
-    if (value.length >= 2) {
-      target.value = value.slice(0, 2);
-    }
+      // Валидация даты
+      const monthInput = document.querySelector('#month');
+      const yearInput = document.querySelector('#year');
 
-    // если меньше 0
-    if (value < 0) {
-      target.value = '01';
-    }
+      monthInput?.addEventListener('input', (event) => {
+        const target = event.target;
+        let value = target.value.trim();
 
-    // если меньше 9
-    if (value > 1 && value < 10) {
-      target.value = `0${value[value.length - 1]}`;
-    }
+        // если вводиться не число
+        if (isNaN(event.data) || value === '') {
+          target.value = value = value.slice(0, value.length - 1);
+        }
 
-    // если больше 12
-    if (value > 12 && value.length <= 2) target.value = '12';
+        // если дина больше 2
+        if (value.length >= 2) {
+          target.value = value.slice(0, 2);
+        }
 
-    // меняет фокус если в нипуте больше 2 символов
-    if (target.value.length >= 2) {
-      document.querySelector('input[tabindex="3"]')?.focus();
-    }
-  });
+        // если меньше 0
+        if (value < 0) {
+          target.value = '01';
+        }
 
-  yearInput?.addEventListener('input', (event) => {
-    const target = event.target;
-    let value = target.value.trim();
+        // если меньше 9
+        if (value > 1 && value < 10) {
+          target.value = `0${value[value.length - 1]}`;
+        }
 
-    // если вводиться не число
-    if (isNaN(event.data) || value === '') {
-      target.value = value = value.slice(0, value.length - 1);
-    }
+        // если больше 12
+        if (value > 12 && value.length <= 2) target.value = '12';
 
-    // если дина больше 2
-    if (value.length >= 2) target.value = value.slice(0, 2);
+        // меняет фокус если в нипуте больше 2 символов
+        if (target.value.length >= 2) {
+          document.querySelector('input[tabindex="3"]')?.focus();
+        }
+      });
 
-    // если меньше 0
-    if (value < 0) target.value = '';
+      yearInput?.addEventListener('input', (event) => {
+        const target = event.target;
+        let value = target.value.trim();
 
-    // меняет фокус если в нипуте больше 2 символов
-    if (target.value.length >= 2) {
-      document.querySelector('input[tabindex="4"]')?.focus();
-    }
-  });
+        // если вводиться не число
+        if (isNaN(event.data) || value === '') {
+          target.value = value = value.slice(0, value.length - 1);
+        }
 
-  // Валидация даты при отправки формы
-  function isDateValid(month, year) {
-    let resutl = false;
-    if (!month || !year) return resutl;
+        // если дина больше 2
+        if (value.length >= 2) target.value = value.slice(0, 2);
 
-    const monthValue = month.value.trim();
-    const yearValue = year.value.trim();
+        // если меньше 0
+        if (value < 0) target.value = '';
 
-    if (
-      isNaN(monthValue) ||
-      monthValue === '' ||
-      monthValue < 0 ||
-      monthValue > 12
-    ) {
-      month.classList.add('error');
-      return resutl;
-    }
+        // меняет фокус если в нипуте больше 2 символов
+        if (target.value.length >= 2) {
+          document.querySelector('input[tabindex="4"]')?.focus();
+        }
+      });
 
-    if (isNaN(yearValue) || yearValue === '' || yearValue < 0) {
-      year.classList.add('error');
-      return resutl;
-    }
+      // Валидация даты при отправки формы
+      function isDateValid(month, year) {
+        let resutl = false;
+        if (!month || !year) return resutl;
 
-    const inputDate = new Date(`20${yearValue}-${monthValue}`);
-    const currentDate = new Date();
+        const monthValue = month.value.trim();
+        const yearValue = year.value.trim();
 
-    resutl = inputDate > currentDate;
+        if (
+          isNaN(monthValue) ||
+          monthValue === '' ||
+          monthValue < 0 ||
+          monthValue > 12
+        ) {
+          month.classList.add('error');
+          return resutl;
+        }
 
-    if (!resutl) {
-      month.classList.add('error');
-      year.classList.add('error');
-    }
+        if (isNaN(yearValue) || yearValue === '' || yearValue < 0) {
+          year.classList.add('error');
+          return resutl;
+        }
 
-    return resutl;
-  }
+        const inputDate = new Date(`20${yearValue}-${monthValue}`);
+        const currentDate = new Date();
 
-  // Валидация номера банковской карты
-  let inputCard = document.querySelector('#card-number'),
-    numbers = /[0-9]/,
-    regExp = /[0-9]{4}/;
+        resutl = inputDate > currentDate;
 
-  inputCard?.addEventListener('input', (event) => {
-    // меняет фокус если в нипуте больше 23 символов
-    if (inputCard.value.length >= 23) {
-      document.querySelector('input[tabindex="2"]')?.focus();
-    }
+        if (!resutl) {
+          month.classList.add('error');
+          year.classList.add('error');
+        }
 
-    // не позволяем ввести ничего, кроме цифр 0-9, ограничиваем размер поля 23-ю символами
-    if (
-      (event.inputType === 'insertText' && !numbers.test(event.data)) ||
-      inputCard.value.length > 23
-    ) {
-      inputCard.value = inputCard.value.slice(0, inputCard.value.length - 1);
-      return;
-    }
+        return resutl;
+      }
 
-    // обеспечиваем работу клавиш "backspace","delete"
-    let value = inputCard.value;
-    if (
-      event.inputType === 'deleteContentBackward' &&
-      regExp.test(value.slice(-4))
-    ) {
-      inputCard.value = inputCard.value.slice(0, inputCard.value.length - 1);
-      return;
-    }
+      // Валидация номера банковской карты
+      let inputCard = document.querySelector('#card-number'),
+        numbers = /[0-9]/,
+        regExp = /[0-9]{4}/;
 
-    // добавяем пробел после 4 цифр подряд
-    if (regExp.test(value.slice(-4)) && value.length < 23) {
-      inputCard.value += ' ';
-    }
-  });
+      inputCard?.addEventListener('input', (event) => {
+        // меняет фокус если в нипуте больше 23 символов
+        if (inputCard.value.length >= 23) {
+          document.querySelector('input[tabindex="2"]')?.focus();
+        }
 
-  // Валидация CVV при вводе в input
-  const inputCVV = document.querySelector('#cvv');
-  inputCVV?.addEventListener('input', ({ target }) => {
-    let value = target.value.trim();
+        // не позволяем ввести ничего, кроме цифр 0-9, ограничиваем размер поля 23-ю символами
+        if (
+          (event.inputType === 'insertText' && !numbers.test(event.data)) ||
+          inputCard.value.length > 23
+        ) {
+          inputCard.value = inputCard.value.slice(
+            0,
+            inputCard.value.length - 1,
+          );
+          return;
+        }
 
-    if (value) target.classList.remove('error');
+        // обеспечиваем работу клавиш "backspace","delete"
+        let value = inputCard.value;
+        if (
+          event.inputType === 'deleteContentBackward' &&
+          regExp.test(value.slice(-4))
+        ) {
+          inputCard.value = inputCard.value.slice(
+            0,
+            inputCard.value.length - 1,
+          );
+          return;
+        }
 
-    if (isNaN(value) || !value) {
-      target.value = value.slice(0, value.length - 1);
-    }
+        // добавяем пробел после 4 цифр подряд
+        if (regExp.test(value.slice(-4)) && value.length < 23) {
+          inputCard.value += ' ';
+        }
+      });
 
-    if (value.length > 3) {
-      target.value = value.slice(0, 3);
-    }
-  });
+      // Валидация CVV при вводе в input
+      const inputCVV = document.querySelector('#cvv');
+      inputCVV?.addEventListener('input', ({ target }) => {
+        let value = target.value.trim();
 
-  // Валидация CVV при отправки формы
-  function isCVVValid(input) {
-    if (!input) return false;
+        if (value) target.classList.remove('error');
 
-    const value = input.value;
-    const regex = new RegExp(/^[0-9]{3}$/);
+        if (isNaN(value) || !value) {
+          target.value = value.slice(0, value.length - 1);
+        }
 
-    if (value == null) {
-      input.classList.add('error');
-      return false;
-    }
+        if (value.length > 3) {
+          target.value = value.slice(0, 3);
+        }
+      });
 
-    if (regex.test(value) == true) {
-      input.classList.remove('error');
-      return true;
-    } else {
-      input.classList.add('error');
-      return false;
-    }
-  }
+      // Валидация CVV при отправки формы
+      function isCVVValid(input) {
+        if (!input) return false;
 
-  // Валидация формы
-  function isFormValid() {
-    const monthInput = document.querySelector('#month');
-    const yearInput = document.querySelector('#year');
-    const cvvInput = document.querySelector('#cvv');
+        const value = input.value;
+        const regex = new RegExp(/^[0-9]{3}$/);
 
-    if (!monthInput || !yearInput || !cvvInput) return false;
+        if (value == null) {
+          input.classList.add('error');
+          return false;
+        }
 
-    return isDateValid(monthInput, yearInput) && isCVVValid(cvvInput);
-  }
+        if (regex.test(value) == true) {
+          input.classList.remove('error');
+          return true;
+        } else {
+          input.classList.add('error');
+          return false;
+        }
+      }
 
-  /*------------------------------------------------------*/
+      // Валидация формы
+      function isFormValid() {
+        const monthInput = document.querySelector('#month');
+        const yearInput = document.querySelector('#year');
+        const cvvInput = document.querySelector('#cvv');
 
-  // Ширина окна для ресайза
-  WW =
-    window.innerWidth ||
-    document.clientWidth ||
-    document.getElementsByTagName('body')[0].clientWidth;
-  WH =
-    window.innerHeight ||
-    document.clientHeight ||
-    document.getElementsByTagName('body')[0].clientHeight;
-  BODY = document.getElementsByTagName('body')[0];
+        if (!monthInput || !yearInput || !cvvInput) return false;
 
-  document.addEventListener('DOMContentLoaded', function () {
-    window.addEventListener('resize', function () {
+        return isDateValid(monthInput, yearInput) && isCVVValid(cvvInput);
+      }
+
+      /*------------------------------------------------------*/
+
+      // Ширина окна для ресайза
+      WW =
+        window.innerWidth ||
+        document.clientWidth ||
+        document.getElementsByTagName('body')[0].clientWidth;
       WH =
         window.innerHeight ||
         document.clientHeight ||
         document.getElementsByTagName('body')[0].clientHeight;
+      BODY = document.getElementsByTagName('body')[0];
 
-      let windowW = window.outerWidth;
+      document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('resize', function () {
+          WH =
+            window.innerHeight ||
+            document.clientHeight ||
+            document.getElementsByTagName('body')[0].clientHeight;
 
-      if (typeof WW !== 'undefined' && WW != windowW) {
-        // Перезапись ширины окна
-        WW =
-          window.innerWidth ||
-          document.clientWidth ||
-          document.getElementsByTagName('body')[0].clientWidth;
+          let windowW = window.outerWidth;
+
+          if (typeof WW !== 'undefined' && WW != windowW) {
+            // Перезапись ширины окна
+            WW =
+              window.innerWidth ||
+              document.clientWidth ||
+              document.getElementsByTagName('body')[0].clientWidth;
+
+            // Моб. версия
+            if (!fakeResize) {
+              fakeResize = true;
+              fakeResize2 = false;
+
+              document.getElementsByTagName('meta')['viewport'].content =
+                'width=device-width, initial-scale=1, maximum-scale=1';
+            }
+
+            if (!fakeResize2) {
+              fakeResize2 = true;
+
+              if (windowW < 375)
+                document.getElementsByTagName('meta')['viewport'].content =
+                  'width=375, user-scalable=no';
+            } else {
+              fakeResize = false;
+              fakeResize2 = true;
+            }
+          }
+        });
+
+        // Есть ли поддержка тач событий или это apple устройство
+        if (
+          !is_touch_device() &&
+          !navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)
+        ) {
+          document.documentElement.classList.add('custom_scroll');
+        }
+
+        // Установка ширины стандартного скроллбара
+        document.documentElement.style.setProperty(
+          '--scroll_width',
+          widthScroll() + 'px',
+        );
 
         // Моб. версия
-        if (!fakeResize) {
-          fakeResize = true;
-          fakeResize2 = false;
+        fakeResize = false;
+        fakeResize2 = true;
 
+        if (document.body.clientWidth < 375) {
           document.getElementsByTagName('meta')['viewport'].content =
-            'width=device-width, initial-scale=1, maximum-scale=1';
+            'width=375, user-scalable=no';
         }
+      });
 
-        if (!fakeResize2) {
-          fakeResize2 = true;
+      // Вспомогательные функции
+      const setHeight = (items) => {
+        let maxheight = 0;
 
-          if (windowW < 375)
-            document.getElementsByTagName('meta')['viewport'].content =
-              'width=375, user-scalable=no';
-        } else {
-          fakeResize = false;
-          fakeResize2 = true;
-        }
-      }
-    });
+        items.forEach((el) => {
+          if (el.offsetHeight > maxheight) maxheight = el.offsetHeight;
+        });
 
-    // Есть ли поддержка тач событий или это apple устройство
-    if (
-      !is_touch_device() &&
-      !navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)
-    ) {
-      document.documentElement.classList.add('custom_scroll');
-    }
+        items.forEach((el) => (el.style.height = maxheight + 'px'));
+      };
 
-    // Установка ширины стандартного скроллбара
-    document.documentElement.style.setProperty(
-      '--scroll_width',
-      widthScroll() + 'px',
-    );
+      const is_touch_device = () => !!('ontouchstart' in window);
 
-    // Моб. версия
-    fakeResize = false;
-    fakeResize2 = true;
+      const widthScroll = () => {
+        let div = document.createElement('div');
 
-    if (document.body.clientWidth < 375) {
-      document.getElementsByTagName('meta')['viewport'].content =
-        'width=375, user-scalable=no';
-    }
-  });
+        div.style.overflowY = 'scroll';
+        div.style.width = '50px';
+        div.style.height = '50px';
+        div.style.visibility = 'hidden';
 
-  // Вспомогательные функции
-  const setHeight = (items) => {
-    let maxheight = 0;
+        document.body.appendChild(div);
 
-    items.forEach((el) => {
-      if (el.offsetHeight > maxheight) maxheight = el.offsetHeight;
-    });
+        let scrollWidth = div.offsetWidth - div.clientWidth;
+        document.body.removeChild(div);
 
-    items.forEach((el) => (el.style.height = maxheight + 'px'));
-  };
-
-  const is_touch_device = () => !!('ontouchstart' in window);
-
-  const widthScroll = () => {
-    let div = document.createElement('div');
-
-    div.style.overflowY = 'scroll';
-    div.style.width = '50px';
-    div.style.height = '50px';
-    div.style.visibility = 'hidden';
-
-    document.body.appendChild(div);
-
-    let scrollWidth = div.offsetWidth - div.clientWidth;
-    document.body.removeChild(div);
-
-    return scrollWidth;
-  };</script></body></html>
+        return scrollWidth;
+      };
+    </script>
+  </body>
+</html>
